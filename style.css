@@ -92,3 +92,24 @@ button {
     color: white;
     transition: 0.4s;
 }
+
+@media (max-width:850px) {
+    .header {
+        width: 80%;
+    }
+}
+
+@media (max-width:680px) {
+    .header {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -11,15 +11,22 @@ req.onreadystatechange = function () {
     let reqRasnks = reqToJSON.ranks;
     let reqLang = reqToJSON.ranks.overall.name;
     // console.log(reqLang);
-    console.log(reqToJSON);
+    // console.log(reqToJSON);
     document.querySelector(
       ".first"
     ).innerHTML = `Completed Challenges: ${reqToJSON.codeChallenges.totalCompleted}`;
-    document.querySelector(".second").innerHTML = `honor: ${reqToJSON.honor}`;
-    console.log(reqToJSON.ranks);
-    console.log(reqToJSON.ranks.overall);
-    console.log(reqToJSON.ranks.overall.score);
-    console.log(reqToJSON.ranks.overall.name);
+    document.querySelector(".second").innerHTML = `Honor: ${reqToJSON.honor}`;
+    // console.log(reqToJSON);
+    // console.log(reqToJSON.ranks.languages);
+    document.querySelector(".fith").innerHTML = reqToJSON.ranks.languages;
+    document.querySelector(
+      ".third"
+    ).innerHTML = ` Rank: ${reqToJSON.ranks.overall.name}`;
+    document.querySelector(
+      ".forth"
+    ).innerHTML = `Score: ${reqToJSON.ranks.overall.score}`;
+    document.querySelector(".fith").innerHTML = `Name: ${reqToJSON.name}`;
+    document.querySelector(".six").innerHTML = `Skills: ${reqToJSON.skills}`;
   }
 };
 

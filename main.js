@@ -15,7 +15,7 @@ req.onreadystatechange = function () {
     document.querySelector(
       ".first"
     ).innerHTML = `Completed Challenges: ${reqToJSON.codeChallenges.totalCompleted}`;
-    document.querySelector(".second").innerHTML = reqToJSON.honor;
+    document.querySelector(".second").innerHTML = `honor: ${reqToJSON.honor}`;
     console.log(reqToJSON.ranks);
     console.log(reqToJSON.ranks.overall);
     console.log(reqToJSON.ranks.overall.score);

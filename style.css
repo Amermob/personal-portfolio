@@ -1,1 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: "Rubik", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #00171F;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    position: fixed;
+    width: 95%;
+}
+
+.container nav {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 35px;
+}
+
+
+h2 {
+    color: white;
+}
+
+.container nav ul {
+    display: flex;
+
+}
+
+.container nav ul li {
+    list-style: none;
+    padding: 10px;
+    margin: 5px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+button {
+    background-color: #00A8E8;
+    border: 2px solid white;
+    color: white;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-size: 20px;
+    padding: 10px 20px;
+    min-width: fit-content;
+    transition: 0.4s;
+
+}
+
+.container nav select {
+    background-color: #00171f;
+    color: white;
+    border: none;
+    text-transform: capitalize;
+    margin-left: 15px;
+    font-size: 15px;
+    outline: none;
+}
+
+.landing {
+    width: 100%;
+    height: 100vh;
+    background-color: #00A8E8;
+    transition: 0.4s;
+}
+
+.landing .kill {
+    position: absolute;
+    top: 70%;
+    left: 25%;
+}
+
+.black {
+    background-color: black;
+    color: white;
+    transition: 0.4s;
+}
+
+@media (max-width:850px) {
+    .header {
+        width: 80%;
+    }
+}
+
+@media (max-width:680px) {
+    .header {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+}

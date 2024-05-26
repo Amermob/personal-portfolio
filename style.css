@@ -84,6 +84,7 @@ button {
 .landing>.kill {
     position: absolute;
     top: 70%;
+    left:20%;
 }
 
 .black {

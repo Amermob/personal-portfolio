@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -7,47 +7,148 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap" rel="stylesheet">
-    <title>Amers Portfolio</title>
+    <title>Memory Blocks Game</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="header">
-            <h2>home</h2>
-            <nav>
-                <ul>
-                    <li>me</li>
-                    <li>projects</li>
-                    <li>challenges</li>
-                    <li>contact</li>
-                </ul>
-            </nav>
-            <button onclick="toggleText(this)" class="btn">dark</button>
+    <div class="control-buttons">
+        <span>start game</span>
+    </div>
+    <div class="info-container">
+        <div class="name">
+            player: <span></span>
+        </div>
+        <div class="tries">
+            Wrong Tries: <span>0</span>
         </div>
     </div>
 
-
-    <div class="landing">
-        <div class="kill">
-
-            <p class="first"></p>
-            <p class="second"></p>
-            <p class="third"></p>
-            <p class="forth"></p>
-            <p class="fith"></p>
-            <p class="six"></p>
-            <p class="seven"></p>
-            <p class="aete"></p>
+    <div class="memory-game-blocks">
+        <div class="game-block" data-technology="angular">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="./img/angular.webp" alt="">
+            </div>
         </div>
-
+        <div class="game-block" data-technology="angular">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="./img/angular.webp" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-technology="css">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="./img/css.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-technology="css">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="./img/css.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-technology="github">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="./img/GitHub.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-technology="github">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="./img/GitHub.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-technology="gulpjs">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="./img/gulpjs.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-technology="gulpjs">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="./img/gulpjs.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-technology="html">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="./img/HTML.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-technology="html">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="./img/HTML.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-technology="jest">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="./img/jest.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-technology="jest">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="./img/jest.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-technology="mongodb">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="./img/mongodb.webp" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-technology="mongodb">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="./img/mongodb.webp" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-technology="python">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="./img/python.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-technology="python">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="./img/python.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-technology="react">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="./img/React.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-technology="react">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="./img/React.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-technology="Vuejs">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="./img/Vuejs.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-technology="Vuejs">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="./img/Vuejs.png" alt="">
+            </div>
+        </div>
     </div>
-    </div>
-    <script src=".//main.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>

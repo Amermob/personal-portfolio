@@ -7,11 +7,6 @@ req.send();
 req.onreadystatechange = function () {
   if (req.readyState === 4 && req.status === 200) {
     const reqToJSON = JSON.parse(req.responseText);
-    let reqSkills = reqToJSON.skills;
-    let reqRasnks = reqToJSON.ranks;
-    let reqLang = reqToJSON.ranks.overall.name;
-    // console.log(reqLang);
-    // console.log(reqToJSON);
     document.querySelector(
       ".first"
     ).innerHTML = `Completed Challenges: ${reqToJSON.codeChallenges.totalCompleted}`;
@@ -49,6 +44,12 @@ reqFinish.onreadystatechange = function () {
 let btn = document.querySelector(".btn");
 let land = document.querySelector(".landing");
 
+btn.addEventListener(
+  ("click",
+  function () {
+    window.reload();
+  })
+);
 function toggleText(event) {
   let text = event.textContent || event.innerText;
   if (text == "dark") {
@@ -58,6 +59,6 @@ function toggleText(event) {
   } else {
     event.innerHTML = "dark";
     land.classList.remove("black");
-    btn.style.backgroundColor = "#00A8E8";
+    btn.style.backgroundColor = " rgba(0, 168, 232, 0.5)";
   }
 }

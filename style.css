@@ -23,7 +23,7 @@ body {
     align-items: center;
     text-transform: capitalize;
     position: fixed;
-    width: 95%;
+    width: calc(100% - 60px);
 }
 
 .container nav {

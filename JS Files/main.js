@@ -55,7 +55,7 @@ function toggleText(event) {
   if (text == "dark") {
     event.innerHTML = "light";
     land.classList.add("black");
-    btn.style.backgroundColor = "black";
+    btn.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
   } else {
     event.innerHTML = "dark";
     land.classList.remove("black");

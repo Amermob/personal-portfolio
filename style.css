@@ -40,7 +40,6 @@ h2 {
 
 .container nav ul {
     display: flex;
-
 }
 
 .container nav ul li {
@@ -61,7 +60,51 @@ button {
     padding: 10px 20px;
     min-width: fit-content;
     transition: 0.4s;
+    min-width: fit-content;
+}
 
+#dots {
+    width: 40px;
+    height: 40px;
+    display: none;
+    margin-top: 10px;
+    position: relative;
+    transition: 0.4s;
+}
+
+#dots span {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+    transition: 0.4s;
+    border-radius: 5px;
+    position: absolute;
+}
+
+
+#dots span:first-child {
+    top: 0px;
+}
+
+#dots span:nth-child(2) {
+    top: 12px;
+}
+
+#dots span:last-child {
+    top: 24px;
+}
+
+#dots:hover span:first-child {
+    transform: rotate(45deg) translate(17px);
+}
+
+#dots:hover span:nth-child(2) {
+    opacity: 0;
+}
+
+#dots:hover span:last-child {
+    transform: rotate(-45deg) translate(17px);
 }
 
 .container nav select {
@@ -100,22 +143,35 @@ button {
 }
 
 @media (max-width:850px) {
-    .header {
-        width: 80%;
+    nav ul {
+        font-size: 25px;
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+
+
+}
+
+@media (max-width:680px) {
+    ul {
+        display: none !important;
+    }
+
+    #dots {
+        display: block !important;
     }
 }
 
 @media (max-width:680px) {
-    .header {
-        width: 40%;
-        display: flex;
+    nav:hover ul {
+        display: flex !important;
         flex-direction: column;
-        flex-wrap: wrap;
-        align-items: flex-start;
+        position: absolute;
+        left: -15px;
+        top: 45px;
     }
 
-    ul {
-        display: flex;
-        flex-direction: column;
-    }
 }

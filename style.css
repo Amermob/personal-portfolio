@@ -40,6 +40,8 @@ h2 {
 
 .container nav ul {
     display: flex;
+        align-items: center;
+
 }
 
 .container nav ul li {

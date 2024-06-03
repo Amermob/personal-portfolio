@@ -7,48 +7,54 @@
 body {
     font-family: "Rubik", sans-serif;
     scroll-behavior: smooth;
+    background-color: rgba(0, 168, 232, 0.5);
+
 }
 
 .container {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-right: auto;
     margin-left: auto;
-    background-color: #00171F;
+    background-color: #00A8E8;
 }
 
-.header {
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    border-bottom: 2px solid white;
+}
+
+
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
     text-transform: capitalize;
-    position: fixed;
-    width: calc(100% - 60px);
-}
-
-.container nav {
-    display: flex;
-    align-items: center;
-    color: white;
-    font-size: 35px;
 }
 
 
 h2 {
     color: white;
+    font-size: 35px;
 }
 
-.container nav ul {
+nav ul {
     display: flex;
-    align-items: baseline;
+    align-items: center;
+
 }
 
-.container nav ul li {
+nav ul li {
     list-style: none;
-    padding: 10px;
-    margin: 5px;
+    padding: 15px;
+    font-size: 30px;
     text-transform: capitalize;
-    cursor: pointer;
 }
 
 button {
@@ -57,11 +63,11 @@ button {
     color: white;
     border-radius: 5px;
     text-transform: capitalize;
-    font-size: 20px;
-    padding: 10px 20px;
-    min-width: fit-content;
+    font-size: 30px;
+    padding: 5px 15px;
     transition: 0.4s;
     min-width: fit-content;
+
 }
 
 #dots {
@@ -108,33 +114,47 @@ button {
     transform: rotate(-45deg) translate(17px);
 }
 
-.container nav select {
-    background-color: #00171f;
-    color: white;
-    border: none;
-    text-transform: capitalize;
-    margin-left: 15px;
-    font-size: 15px;
-    outline: none;
-}
 
 .landing {
-    width: 100%;
-    height: 100vh;
     background-color: #00A8E8;
-    transition: 0.4s;
+    position: relative;
+
 }
 
-#particles-js {
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+.txt {
+    display: flex;
+    justify-content: space-between;
 }
 
-.landing .kill {
+.txt h2 {
+    padding: 20px;
+    text-transform: capitalize;
+}
+
+.txt .text-section {
+    text-align: center;
+}
+
+.txt .text-section span {
+    color: red;
+}
+
+.txt .text-section p {
+    border-bottom: 5px solid black;
+}
+
+.img-section {
+    position: relative;
+}
+
+.txt p::before {
+    content: "";
     position: absolute;
-    top: 70%;
-    left: 25%;
+    width: 600px;
+    height: 600px;
+    top: 2%;
+    left: 40%;
+    border: 5px solid black;
 }
 
 .black {
@@ -143,36 +163,74 @@ button {
     transition: 0.4s;
 }
 
-@media (max-width:850px) {
-    nav ul {
-        font-size: 25px;
+@media (max-width:767px) {
+    h2 {
+        line-height: 2.3;
     }
 
-    button {
-        padding: 10px 15px;
-        font-size: 16px;
-    }
-
-
-}
-
-@media (max-width:680px) {
     ul {
         display: none !important;
     }
 
+    button {
+        display: none;
+    }
+
     #dots {
         display: block !important;
+        position: absolute;
+        left: calc(100% - 60px);
+        top: 10px;
     }
 }
 
-@media (max-width:680px) {
+@media (max-width:767px) {
     nav:hover ul {
         display: flex !important;
         flex-direction: column;
         position: absolute;
-        left: -15px;
-        top: 45px;
+        top: calc(100% + 20px);
+        align-items: flex-start;
+        background-color: #00A8E8;
+        width: 100%;
+        height: 340px;
+        border-radius: 5px;
     }
+
+    button {
+        display: block;
+        position: absolute;
+        top: 75%;
+        padding: 10px 15px;
+        margin-left: 15px;
+    }
+
+}
+
+.skill {
+    background-color: #00A8E8;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+}
+
+.skill img {
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.f-proj {
+    border: 5px solid black;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.f-proj img {
+    width: 500px;
 
 }

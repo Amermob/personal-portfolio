@@ -44,21 +44,15 @@ reqFinish.onreadystatechange = function () {
 let btn = document.querySelector(".btn");
 let land = document.querySelector(".landing");
 
-btn.addEventListener(
-  ("click",
-  function () {
-    window.reload();
-  })
-);
 function toggleText(event) {
   let text = event.textContent || event.innerText;
   if (text == "dark") {
     event.innerHTML = "light";
     land.classList.add("black");
-    btn.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+    btn.style.backgroundColor = "black";
   } else {
     event.innerHTML = "dark";
     land.classList.remove("black");
-    btn.style.backgroundColor = "rgba(0, 168, 232, 0.5)";
+    btn.style.backgroundColor = "#00A8E8";
   }
 }

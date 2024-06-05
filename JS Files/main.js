@@ -41,20 +41,6 @@ reqFinish.onreadystatechange = function () {
   }
 };
 
-let btn = document.querySelector(".btn");
-let land = document.querySelector(".landing");
-
-btn.addEventListener("click", () => {
-  document.querySelector(".container").classList.toggle("dark");
-  document.querySelector("nav:hover").classList.toggle("dark");
-  // document.querySelector("nav").classList.toggle("dark");
-  document.querySelector("ul").classList.toggle("dark");
-  document.querySelector(".header").classList.toggle("dark");
-  document.querySelector(".landing").classList.toggle("dark");
-  document.querySelector(".btn").classList.toggle("darkbtn");
-  // console.log("hello");
-});
-
 function toggleText(event) {
   let text = event.textContent;
   if (text == "dark") {
@@ -63,3 +49,16 @@ function toggleText(event) {
     event.innerHTML = "dark";
   }
 }
+
+document.querySelector(".btn").addEventListener("click", () => {
+  document.querySelector(".container").classList.toggle("dark");
+  document.querySelector("nav:hover").classList.toggle("dark");
+  document.querySelector("nav").classList.toggle("dark");
+  document.querySelector("ul").classList.toggle("dark");
+  document.querySelector("select").classList.toggle("dark");
+  document.querySelector("option").classList.toggle("dark");
+  document.querySelector(".header").classList.toggle("dark");
+  document.querySelector(".landing").classList.toggle("dark");
+  document.querySelector(".btn").classList.toggle("darkbtn");
+  // console.log("hello");
+});

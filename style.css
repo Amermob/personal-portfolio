@@ -7,8 +7,7 @@
 body {
     font-family: "Rubik", sans-serif;
     scroll-behavior: smooth;
-    background-color: rgba(0, 168, 232, 0.5);
-
+    /* background-color: rgba(0, 168, 232, 0.5); */
 }
 
 .container {
@@ -17,6 +16,8 @@ body {
     margin-right: auto;
     margin-left: auto;
     background-color: #00A8E8;
+    transition: 0.8s;
+
 }
 
 a {
@@ -58,7 +59,7 @@ nav ul li {
 }
 
 button {
-    background-color: rgba(0, 168, 232, 0.5);
+    background-color: #00A8E8;
     border: 2px solid white;
     color: white;
     border-radius: 5px;
@@ -68,6 +69,12 @@ button {
     transition: 0.4s;
     min-width: fit-content;
 
+}
+
+.dark {
+    background-color: #102A43 !important;
+    color: white !important;
+    transition: 0.8s;
 }
 
 #dots {
@@ -117,18 +124,22 @@ button {
 
 .landing {
     background-color: #00A8E8;
-    position: relative;
-
 }
 
 .txt {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .txt h2 {
-    padding: 20px;
     text-transform: capitalize;
+    font-size: 50px;
+}
+
+.text-section img {
+    width: 50px;
+    height: 50px;
+    margin: 20px;
 }
 
 .txt .text-section {
@@ -136,37 +147,51 @@ button {
 }
 
 .txt .text-section span {
-    color: red;
+    color: #f00;
 }
 
 .txt .text-section p {
-    border-bottom: 5px solid black;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: capitalize;
 }
 
-.img-section {
-    position: relative;
-}
-
-.txt p::before {
-    content: "";
-    position: absolute;
+.img-section img {
     width: 600px;
-    height: 600px;
-    top: 2%;
-    left: 40%;
-    border: 5px solid black;
 }
 
-.black {
-    background-color: black;
-    color: white;
+.dark {
+    background-color: #102A43;
+    color: #fff;
     transition: 0.4s;
 }
 
-@media (max-width:767px) {
-    h2 {
-        line-height: 2.3;
+.darkbtn {
+    background-color: #102A43;
+    color: #fff;
+    transition: 0.4s;
+}
+
+@media (max-width:1200px) {
+    .txt .img-section img {
+        width: 500px;
     }
+}
+
+@media (max-width:1000px) {
+    .txt .img-section img {
+        width: 400px;
+    }
+
+    .txt h2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width:767px) {
+    /* h2 {
+        line-height: 2.3;
+    } */
 
     ul {
         display: none !important;
@@ -182,6 +207,56 @@ button {
         left: calc(100% - 60px);
         top: 10px;
     }
+
+    .img-section img {
+        width: 350px;
+    }
+
+    .txt .text-section {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:450px) {
+    .img-section img {
+        width: 300px !important;
+    }
+
+    .txt .text-section h2 {
+        font-size: 30px !important;
+    }
+}
+
+@media (max-width:300px) {
+    .txt .img-section img {
+        width: 250px !important;
+    }
+
+    .txt .text-section h2 {
+        font-size: 25px;
+    }
+
+    .text-section img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+@media (max-width:850px) {
+
+    .txt {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .txt .img-section img {
+        margin: 20px 0;
+
+    }
 }
 
 @media (max-width:767px) {
@@ -193,10 +268,10 @@ button {
         align-items: flex-start;
         background-color: #00A8E8;
         width: 100%;
-        height: 340px;
+        height: 350px;
         border-radius: 5px;
         z-index: 2;
-        border: 2px solid black;
+        border: 2px solid #fff;
     }
 
     button {
@@ -206,6 +281,7 @@ button {
         padding: 10px 15px;
         margin-left: 15px;
     }
+
 
 }
 

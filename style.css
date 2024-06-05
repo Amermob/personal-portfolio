@@ -136,10 +136,11 @@ button {
     font-size: 50px;
 }
 
-.text-section img {
+.txt .text-section img {
     width: 50px;
     height: 50px;
     margin: 20px;
+    border-radius: 10px;
 }
 
 .txt .text-section {
@@ -158,6 +159,7 @@ button {
 
 .img-section img {
     width: 600px;
+    border-radius: 5px;
 }
 
 .dark {
@@ -233,12 +235,12 @@ button {
     }
 
     .txt .text-section h2 {
-        font-size: 25px;
+        font-size: 25px !important;
     }
 
     .text-section img {
-        width: 40px;
-        height: 40px;
+        width: 40px !important;
+        height: 40px !important;
     }
 }
 

@@ -50,6 +50,7 @@ function toggleText(event) {
   }
 }
 
+// get all element from set attribute
 document.querySelector(".btn").addEventListener("click", () => {
   document.querySelector(".container").classList.toggle("dark");
   document.querySelector("nav:hover").classList.toggle("dark");

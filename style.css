@@ -7,6 +7,8 @@
 body {
     font-family: "Rubik", sans-serif;
     scroll-behavior: smooth;
+    height: 2000px;
+    padding-top: 60px;
     /* background-color: rgba(0, 168, 232, 0.5); */
 }
 
@@ -17,7 +19,15 @@ body {
     margin-left: auto;
     background-color: #00A8E8;
     transition: 0.8s;
+}
 
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    background-color: #00A8E8;
 }
 
 a {
@@ -235,7 +245,7 @@ select {
     }
 }
 
-@media (max-width:767px) {
+@media (max-width:780px) {
 
     ul {
         display: none !important;
@@ -247,6 +257,11 @@ select {
 
     nav h2 {
         margin-top: 10px;
+    }
+
+    .header {
+        height: 60px;
+        padding-left: 10px;
     }
 
     #dots {
@@ -290,6 +305,22 @@ select {
     }
 }
 
+@media (max-width:270px) {
+    .txt {
+        .contact {
+            i {
+                font-size: 35px !important;
+            }
+        }
+    }
+
+    .text-section {
+        img {
+            width: 30px !important;
+            height: 30px !important;
+        }
+    }
+}
 
 @media (max-width:850px) {
 
@@ -313,6 +344,7 @@ select {
         flex-direction: column;
         position: absolute;
         top: calc(100% + 20px);
+        right: 5px;
         align-items: flex-start;
         background-color: #00A8E8;
         width: 100%;

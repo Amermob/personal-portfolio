@@ -49,6 +49,7 @@ nav ul {
     display: flex;
     align-items: center;
 
+
 }
 
 nav ul li {
@@ -142,11 +143,14 @@ select {
 .txt {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
-.txt h2 {
-    text-transform: capitalize;
-    font-size: 50px;
+.txt {
+    h2 {
+        text-transform: capitalize;
+        font-size: 50px;
+    }
 }
 
 .txt .text-section img {
@@ -164,10 +168,22 @@ select {
     color: #f00;
 }
 
-.txt .text-section p {
-    font-size: 50px;
-    font-weight: bold;
-    text-transform: capitalize;
+.txt {
+    .contact {
+        i {
+            font-size: 50px;
+            margin: 0 20px 20px 20px;
+        }
+    }
+}
+
+.txt {
+    .contact {
+        a:hover {
+            border: none;
+        }
+    }
+
 }
 
 .img-section img {
@@ -220,9 +236,6 @@ select {
 }
 
 @media (max-width:767px) {
-    /* h2 {
-        line-height: 2.3;
-    } */
 
     ul {
         display: none !important;
@@ -230,6 +243,10 @@ select {
 
     button {
         display: none;
+    }
+
+    nav h2 {
+        margin-top: 10px;
     }
 
     #dots {
@@ -290,7 +307,7 @@ select {
     }
 }
 
-@media (max-width:767px) {
+@media (max-width:780px) {
     nav:hover ul {
         display: flex !important;
         flex-direction: column;
@@ -299,7 +316,7 @@ select {
         align-items: flex-start;
         background-color: #00A8E8;
         width: 100%;
-        height: 400px;
+        height: 340px;
         border-radius: 5px;
         z-index: 3;
         border: 2px solid #fff;
@@ -308,7 +325,7 @@ select {
     button {
         display: block;
         position: absolute;
-        top: 82%;
+        top: 78%;
         padding: 10px 15px;
         margin-left: 15px;
     }

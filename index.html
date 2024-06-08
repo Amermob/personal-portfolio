@@ -15,35 +15,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Amers Portfolio</title>
+    <title>hehes Portfolio</title>
 </head>
 
-<body>
-    <div class="container">
-        <div class="header">
-            <nav>
-                <div id="dots">
+<body data-set="dark">
+    <div class="container" data-set="dark">
+        <div class="header" data-set="dark">
+            <nav data-set="dark">
+                <div id="dots" onclick="toggleMenu()">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
-                <h2>home</h2>
-                <ul>
+                <h2></h2>
+                <ul id="listMenu" data-set="dark">
                     <li><a href="">me</a></li>
                     <li><a href="">projects</a></li>
                     <li><a href="">challenges</a></li>
-                    <!-- <li><a href="">contact</a></li> -->
-                    <select name="Language" id="Language">
+                    <!-- <li class="test"><a href="">contact</a></li> -->
+                    <select data-set="dark" name="Language" id="Language">
                         <label for="Language">Language</label>
-                        <option value="">Arabic</option>
-                        <option value="" selected>English</option>
+                        <option data-set="dark" value="">Arabic</option>
+                        <option data-set="dark" value="" selected>English</option>
                     </select>
-                    <button onclick="toggleText(this)" class="btn">dark</button>
+                    <button onclick="toggleText(this)" class="btn" data-set="dark">dark</button>
                 </ul>
             </nav>
         </div>
     </div>
-    <div class="landing container">
+    <div class="landing container" data-set="dark">
         <div class="txt">
             <div class="text-section">
                 <h2>oga ponga</h2>
@@ -62,15 +62,23 @@
                 </div>
             </div>
             <div class="img-section">
-                <img src="./img/28xp-pepefrog-superJumbo.jpg" alt="">
+                <img src="./img/tumblr_static_tumblr_static__640.jpg" alt="">
             </div>
         </div>
     </div>
 
 
-    <div class="container">
-        <div class="me">
-
+    <div data-set="dark" class="me">
+        <div class="box">
+            <div class="img-section">
+                <img src=".//img/7534e1650b119967053e49fa066ab43a.png" alt="">
+                <p data-set="dark">1996/04/06</p>
+            </div>
+            <div class="text-section">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum beatae mollitia aut nam
+                    distinctio. Vero quis maxime tempora assumenda dolores eius quisquam debitis corporis
+                    exercitationem, voluptatum expedita omnis ducimus dolore.</p>
+            </div>
         </div>
     </div>
 

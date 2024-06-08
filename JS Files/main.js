@@ -51,15 +51,44 @@ function toggleText(event) {
 }
 
 // get all element from set attribute
-document.querySelector(".btn").addEventListener("click", () => {
-  document.querySelector(".container").classList.toggle("dark");
-  document.querySelector("nav:hover").classList.toggle("dark");
-  document.querySelector("nav").classList.toggle("dark");
-  document.querySelector("ul").classList.toggle("dark");
-  document.querySelector("select").classList.toggle("dark");
-  document.querySelector("option").classList.toggle("dark");
-  document.querySelector(".header").classList.toggle("dark");
-  document.querySelector(".landing").classList.toggle("dark");
-  document.querySelector(".btn").classList.toggle("darkbtn");
-  // console.log("hello");
+// document.querySelector(".btn").addEventListener("click", () => {
+//   document.querySelector(".container").classList.toggle("dark");
+//   document.querySelector("nav:hover").classList.toggle("dark");
+//   document.querySelector("nav").classList.toggle("dark");
+//   document.querySelector("ul").classList.toggle("dark");
+//   document.querySelector("select").classList.toggle("dark");
+//   document.querySelector("option").classList.toggle("dark");
+//   document.querySelector(".header").classList.toggle("dark");
+//   document.querySelector(".landing").classList.toggle("dark");
+//   document.querySelector(".btn").classList.toggle("darkbtn");
+//   // console.log("hello");
+// });
+
+//Dark Mode
+document.querySelector(".btn").addEventListener("click", function () {
+  let dataTest = Array.from(document.querySelectorAll(`[data-set="dark"]`));
+  dataTest.forEach((el) => el.classList.toggle("dark"));
 });
+let menuList = document.querySelector("#listMenu");
+
+let arReq = new XMLHttpRequest();
+arReq.open("GET", "./JS Files/Ar.json");
+arReq.send();
+arReq.onreadystatechange = function () {
+  if (this.readyState === 4 && this.status === 200) {
+    let text = JSON.parse(arReq.responseText);
+    document.querySelector("#dots+h2").innerHTML = text.home;
+    console.log(text);
+  }
+};
+
+let enReq = new XMLHttpRequest();
+enReq.open("GET", "./JS Files/En.json");
+enReq.send();
+enReq.onreadystatechange = function () {
+  if (enReq.readyState === 4 && enReq.status === 200) {
+    let text = JSON.parse(enReq.responseText);
+    document.querySelector("#dots+h2").innerHTML = text.home;
+    console.log(text);
+  }
+};

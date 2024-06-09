@@ -69,26 +69,42 @@ document.querySelector(".btn").addEventListener("click", function () {
   let dataTest = Array.from(document.querySelectorAll(`[data-set="dark"]`));
   dataTest.forEach((el) => el.classList.toggle("dark"));
 });
-let menuList = document.querySelector("#listMenu");
 
-let arReq = new XMLHttpRequest();
-arReq.open("GET", "./JS Files/Ar.json");
-arReq.send();
-arReq.onreadystatechange = function () {
+let arLang = new XMLHttpRequest();
+arLang.open("GET", "./JS Files/Ar.json");
+arLang.send();
+arLang.onreadystatechange = function () {
   if (this.readyState === 4 && this.status === 200) {
-    let text = JSON.parse(arReq.responseText);
+    let text = JSON.parse(arLang.responseText);
     document.querySelector("#dots+h2").innerHTML = text.home;
     console.log(text);
   }
 };
 
-let enReq = new XMLHttpRequest();
-enReq.open("GET", "./JS Files/En.json");
-enReq.send();
-enReq.onreadystatechange = function () {
-  if (enReq.readyState === 4 && enReq.status === 200) {
-    let text = JSON.parse(enReq.responseText);
+let enLang = new XMLHttpRequest();
+enLang.open("GET", "./JS Files/En.json");
+enLang.send();
+enLang.onreadystatechange = function () {
+  if (this.readyState === 4 && this.status === 200) {
+    let text = JSON.parse(enLang.responseText);
     document.querySelector("#dots+h2").innerHTML = text.home;
     console.log(text);
   }
+};
+
+let burgermenu = document.querySelector("ul");
+let firstSpan = document.querySelector("#dots span:first-child");
+let SecondSpan = document.querySelector("#dots span:nth-child(2)");
+let lastSpan = document.querySelector("#dots span:last-child");
+document.querySelector("#dots").onclick = function () {
+  burgermenu.classList.toggle("burgermenu");
+  firstSpan.classList.toggle("fristspan");
+  SecondSpan.classList.toggle("secondspan");
+  lastSpan.classList.toggle("lastspan");
+};
+document.querySelector("#dots").onmouseleave = function () {
+  burgermenu.classList.remove("burgermenu");
+  firstSpan.classList.remove("fristspan");
+  SecondSpan.classList.remove("secondspan");
+  lastSpan.classList.remove("lastspan");
 };

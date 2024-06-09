@@ -70,16 +70,16 @@ document.querySelector(".btn").addEventListener("click", function () {
   dataTest.forEach((el) => el.classList.toggle("dark"));
 });
 
-let arLang = new XMLHttpRequest();
-arLang.open("GET", "./JS Files/Ar.json");
-arLang.send();
-arLang.onreadystatechange = function () {
-  if (this.readyState === 4 && this.status === 200) {
-    let text = JSON.parse(arLang.responseText);
-    document.querySelector("#dots+h2").innerHTML = text.home;
-    console.log(text);
-  }
-};
+// let arLang = new XMLHttpRequest();
+// arLang.open("GET", "./JS Files/Ar.json");
+// arLang.send();
+// arLang.onreadystatechange = function () {
+//   if (this.readyState === 4 && this.status === 200) {
+//     let text = JSON.parse(arLang.responseText);
+//     document.querySelector("#dots+h2").innerHTML = text.home;
+//     console.log(text);
+//   }
+// };
 
 let enLang = new XMLHttpRequest();
 enLang.open("GET", "./JS Files/En.json");

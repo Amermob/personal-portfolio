@@ -132,15 +132,15 @@ select {
     top: 24px;
 }
 
-#dots:hover span:first-child {
+.fristspan {
     transform: rotate(45deg) translate(17px);
 }
 
-#dots:hover span:nth-child(2) {
+.secondspan {
     opacity: 0;
 }
 
-#dots:hover span:last-child {
+.lastspan {
     transform: rotate(-45deg) translate(17px);
 }
 
@@ -340,8 +340,25 @@ a:hover {
     border: none;
 }
 
+.burgermenu {
+
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    top: calc(100% + 20px);
+    right: -5px;
+    align-items: flex-start;
+    background-color: #00A8E8;
+    width: 100%;
+    height: 340px;
+    border-radius: 5px;
+    z-index: 3;
+    border: 2px solid #fff;
+
+}
+
 @media (max-width:820px) {
-    nav:hover ul {
+    /* nav:hover ul {
         display: flex !important;
         flex-direction: column;
         position: absolute;
@@ -354,7 +371,7 @@ a:hover {
         border-radius: 5px;
         z-index: 3;
         border: 2px solid #fff;
-    }
+    } */
 
     button {
         display: block;

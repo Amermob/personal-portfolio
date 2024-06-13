@@ -34,11 +34,11 @@
                     <li><a href="">projects</a></li>
                     <li><a href="">challenges</a></li>
                     <!-- <li class="test"><a href="">contact</a></li> -->
-                    <select data-set="dark" name="Language" id="language">
-                        <option id="ar" data-set="dark" value="">Arabic</option>
-                        <option id="en" data-set="dark" value="" selected>English</option>
+                    <select name="Language" id="language">
+                        <option data-set="dark" id="ar" value="">Arabic</option>
+                        <option data-set="dark" id="en" value="" selected>English</option>
                     </select>
-                    <button onclick="toggleText(this)" class="btn" data-set="dark">dark</button>
+                    <button onclick="toggleText(this)" class="btn">dark</button>
                 </ul>
             </nav>
         </div>
@@ -52,17 +52,22 @@
                 <!-- <h2>Amer Mohamed</h2>
                 <h2>self-taught</h2>
                 <h2>front end developer</h2> -->
-                <img title="HTML" src="./img/HTML.png" alt="">
-                <img title="CSS" src="./img/CSS.png" alt="">
-                <img title="JavaScript" src="./img/JS.png" alt="">
+                <div class="tech">
+                    <p data-set="dark">tech |</p>
+                    <img title="HTML" src="./img/HTML.png" alt="">
+                    <img title="CSS" src="./img/CSS.png" alt="">
+                    <img title="JavaScript" src="./img/JS.png" alt="">
+                </div>
                 <div class="contact">
+                    <p data-set="dark">socials |</p>
                     <a href="https://github.com/Amermob" target="_blank"><i class="fa-brands fa-github"></i></a>
                     <a href="https://discordapp.com/users/285849563422654465" target="_blank"><i
                             class="fa-brands fa-discord"></i></a>
                 </div>
             </div>
             <div class="img-section">
-                <img src="./img/tumblr_static_tumblr_static__640.jpg" alt="">
+                <img src="./img/28xp-pepefrog-superJumbo.jpg" alt="">
+                <div class="backball"></div>
             </div>
         </div>
     </div>
@@ -71,16 +76,29 @@
     </svg>
     <div class="container" data-set="dark">
         <div data-set="dark" class="me">
-            <h2>about me</h2>
+            <div class="main-heading">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <h2>about me</h2>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
             <div class="box">
                 <div class="img-section">
                     <img src=".//img/7534e1650b119967053e49fa066ab43a.png" alt="">
+                    <!-- <img src="" alt=""> -->
                     <p data-set="dark">1996/04/06</p>
+                    <span></span>
                 </div>
                 <div class="text-section">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum beatae mollitia aut nam
-                        distinctio. Vero quis maxime tempora assumenda dolores eius quisquam debitis corporis
-                        exercitationem, voluptatum expedita omnis ducimus dolore.</p>
+                    <!-- <p>Hi, my name is Amer mohamed and i am currently working as a barista in Sombrero coffee shop
+                        Riyadh. <br>
+                        I tend to spend my time to learn how to be a front end developer. I started with HTML and then
+                        moved to
+                        CSS, and started working on a project, after that I started learning javascript.</p> -->
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae voluptatibus minus architecto
+                        ipsum dolor, sint assumenda non blanditiis amet ullam quisquam molestias voluptatem incidunt
+                        ducimus aperiam neque cupiditate soluta id!</p>
                 </div>
             </div>
         </div>
@@ -89,36 +107,49 @@
 
 
 
-    <div class="container" data-set="dark">
-        <div data-set="dark" class="projects">
+    <div data-set="dark" class="projects">
+        <div class="main-heading">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
             <h2>projects</h2>
-            <!-- <h2>main quest</h2> -->
-            <div class="main-projects" data-set="dark">
-                <div data-set="dark" class="box">
-                    <img src="./img/sombrero.png" alt="">
-                    <div class="project sombrero" data-set="dark">
-                        <h2>Sombrero Coffee Shop</h2>
-                        <p>Sombrero Is A Specialty Saudi Owned Coffee Shop Which Porvides Only The Best Top Quality Of
-                            Pure
-                            Colombian Coffee.</p>
-                        <div class="link">
-                            <a href="https://amermob.github.io/Sombrero-Coffee-Shop/" target="_blank">Live Demo</a>
-                            <p>finished Mar 2023</p>
-                        </div>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="main-projects" data-set="dark">
+            <div data-set="dark" class="box">
+                <img src="./img/sombrero.png" alt="">
+                <div class="project sombrero" data-set="dark">
+                    <h2 data-set="dark">Sombrero Coffee Shop</h2>
+                    <p>sombrero is a colombian saudi owned coffee shop</p>
+                    <div class="link">
+                        <a href="https://amermob.github.io/Sombrero-Coffee-Shop/" target="_blank">Live Demo</a>
+                        <p>finished Mar 2023</p>
                     </div>
                 </div>
-                <div class="box" data-set="dark">
-                    <img src="./img/sabahat al eid.png" alt="">
-                    <div class="project sombrero" data-set="dark">
-                        <h2>Sabahat al eid</h2>
-                        <p>a construction based website made for a business focus.</p>
-                        <div class="link" data-set="dark">
-                            <a href="https://sabahat-al-eid.com/" target="_blank">Live Demo</a>
-                            <p>finished Dec 2023</p>
-                        </div>
+            </div>
+            <div data-set="dark" class="box">
+                <img src="./img/sombrero.png" alt="">
+                <div class="project sombrero" data-set="dark">
+                    <h2 data-set="dark">Sombrero Coffee Shop</h2>
+                    <p>sombrero is a colombian saudi owned coffee shop</p>
+                    <div class="link">
+                        <a href="https://amermob.github.io/Sombrero-Coffee-Shop/" target="_blank">Live Demo</a>
+                        <p>finished Mar 2023</p>
                     </div>
                 </div>
-                <div class="box" data-set="dark">
+            </div>
+            <div class="box" data-set="dark">
+                <img src="./img/sabahat al eid.png" alt="">
+                <div class="project sombrero" data-set="dark">
+                    <h2 data-set="dark">Sabahat al eid</h2>
+                    <p>a construction based website made for a business focus.</p>
+                    <div class="link" data-set="dark">
+                        <a href="https://sabahat-al-eid.com/" target="_blank">Live</a>
+                        <p>finished Dec 2023</p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="box" data-set="dark">
                     <img src="./img/1572274275044.png" alt="">
                     <div class="project sombrero">
                         <h2>Calc coffee per grams</h2>
@@ -128,11 +159,10 @@
                             <p>???</p>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="contribution">
-                <h2>contributed projects</h2>
-            </div>
+                </div> -->
+        </div>
+        <div class="contribution">
+            <!-- <h2>contributed projects</h2> -->
         </div>
     </div>
 

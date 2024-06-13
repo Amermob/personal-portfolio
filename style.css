@@ -17,6 +17,11 @@ body {
     color: white !important;
 }
 
+.notdark {
+    background-color: #10432b !important;
+    color: white !important;
+}
+
 .container {
     padding-left: 10px;
     padding-right: 10px;

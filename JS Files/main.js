@@ -68,7 +68,9 @@ function toggleText(event) {
 //Dark Mode
 document.querySelector(".btn").addEventListener("click", function () {
   let dataTest = Array.from(document.querySelectorAll(`[data-set="dark"]`));
+  let notTest = Array.from(document.querySelectorAll(`[data-set="notdark"]`));
   dataTest.forEach((el) => el.classList.toggle("dark"));
+  notTest.forEach((el) => el.classList.toggle("notdark"));
 });
 
 // let arLang = new XMLHttpRequest();

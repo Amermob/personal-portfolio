@@ -93,13 +93,17 @@ enLang.onreadystatechange = function () {
   }
 };
 
-let burgermenu = document.querySelector("ul");
-let firstSpan = document.querySelector("#dots span:first-child");
-let SecondSpan = document.querySelector("#dots span:nth-child(2)");
-let lastSpan = document.querySelector("#dots span:last-child");
+// let burgermenu = document.querySelector("ul");
+// let firstSpan = document.querySelector("#dots span:first-child");
+// let SecondSpan = document.querySelector("#dots span:nth-child(2)");
+// let lastSpan = document.querySelector("#dots span:last-child");
 document.querySelector("#dots").onclick = function () {
-  burgermenu.classList.toggle("burgermenu");
-  firstSpan.classList.toggle("fristspan");
-  SecondSpan.classList.toggle("secondspan");
-  lastSpan.classList.toggle("lastspan");
+  document.querySelector("ul").classList.toggle("burgermenu");
+  document
+    .querySelector("#dots span:first-child")
+    .classList.toggle("fristspan");
+  document
+    .querySelector("#dots span:nth-child(2)")
+    .classList.toggle("secondspan");
+  document.querySelector("#dots span:last-child").classList.toggle("lastspan");
 };

@@ -51,54 +51,14 @@ function toggleText(event) {
   }
 }
 
-// get all element from set attribute
-// document.querySelector(".btn").addEventListener("click", () => {
-//   document.querySelector(".container").classList.toggle("dark");
-//   document.querySelector("nav:hover").classList.toggle("dark");
-//   document.querySelector("nav").classList.toggle("dark");
-//   document.querySelector("ul").classList.toggle("dark");
-//   document.querySelector("select").classList.toggle("dark");
-//   document.querySelector("option").classList.toggle("dark");
-//   document.querySelector(".header").classList.toggle("dark");
-//   document.querySelector(".landing").classList.toggle("dark");
-//   document.querySelector(".btn").classList.toggle("darkbtn");
-//   // console.log("hello");
-// });
-
 //Dark Mode
 document.querySelector(".btn").addEventListener("click", function () {
-  let dataTest = Array.from(document.querySelectorAll(`[data-set="dark"]`));
-  let notTest = Array.from(document.querySelectorAll(`[data-set="notdark"]`));
+  let dataTest = document.querySelectorAll(`[data-set="dark"]`);
+  let notTest = document.querySelectorAll(`[data-set="notdark"]`);
   dataTest.forEach((el) => el.classList.toggle("dark"));
   notTest.forEach((el) => el.classList.toggle("notdark"));
 });
 
-// let arLang = new XMLHttpRequest();
-// arLang.open("GET", "./JS Files/Ar.json");
-// arLang.send();
-// arLang.onreadystatechange = function () {
-//   if (this.readyState === 4 && this.status === 200) {
-//     let text = JSON.parse(arLang.responseText);
-//     document.querySelector("#dots+h2").innerHTML = text.home;
-//     console.log(text);
-//   }
-// };
-
-let enLang = new XMLHttpRequest();
-enLang.open("GET", "./JS Files/En.json");
-enLang.send();
-enLang.onreadystatechange = function () {
-  if (this.readyState === 4 && this.status === 200) {
-    let text = JSON.parse(enLang.responseText);
-    document.querySelector("#dots+h2").innerHTML = text.home;
-    console.log(text);
-  }
-};
-
-// let burgermenu = document.querySelector("ul");
-// let firstSpan = document.querySelector("#dots span:first-child");
-// let SecondSpan = document.querySelector("#dots span:nth-child(2)");
-// let lastSpan = document.querySelector("#dots span:last-child");
 document.querySelector("#dots").onclick = function () {
   document.querySelector("ul").classList.toggle("burgermenu");
   document
@@ -108,4 +68,12 @@ document.querySelector("#dots").onclick = function () {
     .querySelector("#dots span:nth-child(2)")
     .classList.toggle("secondspan");
   document.querySelector("#dots span:last-child").classList.toggle("lastspan");
+};
+
+window.onscroll = function () {
+  if (this.scrollY >= 200) {
+    document.querySelector(".header").style.backgroundColor = "#00A8E8";
+  } else {
+    document.querySelector(".header").style.backgroundColor = "transparent";
+  }
 };

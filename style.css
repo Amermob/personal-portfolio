@@ -1340,6 +1340,15 @@ ul li a:hover {
             border-radius: 20px;
             color: #fff;
             background-color: #00A8E8;
+            transition: 0.4s;
+        }
+    }
+}
+
+.projects {
+    .project {
+        a:hover {
+            box-shadow: 0 0 1em 0.1em #102A43;
         }
     }
 }

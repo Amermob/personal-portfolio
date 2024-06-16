@@ -77,3 +77,29 @@ window.onscroll = function () {
     document.querySelector(".header").style.backgroundColor = "transparent";
   }
 };
+
+let username = document.querySelector("#name");
+let email = document.querySelector("#email");
+let phone = document.querySelector("#number");
+let subject = document.querySelector("#subject");
+let message = document.querySelector("#message");
+
+document.querySelector(".submit").addEventListener("click", function (e) {
+  e.preventDefault();
+  let ebody = `
+  <h1>my Name is: ${username.value}</h1> <br>
+  <h1>my email is: ${email.value}</h1> <br>
+  <h1>my phone number is: ${phone.value}</h1> <br>
+  <h1>reason for meesage is: ${subject.value}</h1> <br>
+  <h1>message is: ${message.value}</h1> <br>
+  `;
+
+  Email.send({
+    SecureToken: "54ff1629-30a2-4e21-b9b2-9e5e38878f30",
+    To: "amermob5@gmail.com",
+    From: "amermob5@gmail.com",
+    Subject: document.querySelector("#subject").value,
+    Body: ebody,
+  }).then((message) => alert(message));
+  document.querySelector(".form").reset();
+});

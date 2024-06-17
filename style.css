@@ -50,6 +50,7 @@ body {
 .main-heading {
     i {
         animation: color 1s infinite ease;
+        margin: 0 10px;
 
     }
 }
@@ -83,6 +84,7 @@ nav {
 h2 {
     color: white;
     font-size: 50px;
+    text-transform: capitalize;
 }
 
 nav ul {
@@ -218,6 +220,7 @@ option {
     .tech {
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 }
 
@@ -451,6 +454,12 @@ option {
             }
         }
     }
+
+    .footer {
+        h2 {
+            font-size: 45px;
+        }
+    }
 }
 
 .me {
@@ -520,6 +529,11 @@ option {
             width: 400px !important;
             height: 250px !important;
         } */
+    .footer {
+        h2 {
+            font-size: 40px;
+        }
+    }
 }
 
 .project {
@@ -677,6 +691,14 @@ option {
 
 }
 
+@media (max-width:600px) {
+    .footer {
+        h2 {
+            font-size: 30px !important;
+        }
+    }
+}
+
 @media (max-width:550px) {
     .me {
         h2 {
@@ -785,6 +807,12 @@ option {
             p {
                 font-size: 20px !important;
             }
+        }
+    }
+
+    .footer {
+        h2 {
+            font-size: 25px !important;
         }
     }
 }
@@ -912,6 +940,12 @@ option {
     .txt .contact i {
         font-size: 30px;
     }
+
+    .footer {
+        h2 {
+            font-size: 20px !important;
+        }
+    }
 }
 
 @media (max-width:430px) {
@@ -923,6 +957,19 @@ option {
 
     .main-heading {
         margin: 0 auto 30px !important;
+    }
+
+    .contacts {
+        .text-section {
+            padding: 20px !important;
+            width: 320px !important;
+        }
+    }
+
+    .contacts {
+        .input {
+            width: 320px !important;
+        }
     }
 }
 
@@ -973,7 +1020,11 @@ option {
     }
 
 
-
+    .footer {
+        h2 {
+            font-size: 18px !important;
+        }
+    }
 }
 
 @media (max-width:350px) {
@@ -991,6 +1042,12 @@ option {
 
     .project {
         p {
+            font-size: 15px !important;
+        }
+    }
+
+    .footer {
+        h2 {
             font-size: 15px !important;
         }
     }
@@ -1068,6 +1125,12 @@ option {
         margin: 20px 0;
 
     }
+
+    .footer {
+        h2 {
+            font-size: 35px;
+        }
+    }
 }
 
 ul li a {
@@ -1115,6 +1178,8 @@ ul li a:hover {
 
 .me {
     margin: 200px 0;
+    padding: 100px;
+    background-color: #6e44ff;
 }
 
 .me {
@@ -1156,7 +1221,6 @@ ul li a:hover {
 .me {
     i {
         animation: color 2s infinite ease;
-        padding: 10px;
         margin-bottom: 15px;
     }
 }
@@ -1250,6 +1314,10 @@ ul li a:hover {
     }
 }
 
+.projects {
+    margin: 200px 0;
+}
+
 .main-projects {
     display: flex;
     justify-content: space-evenly;
@@ -1287,12 +1355,13 @@ ul li a:hover {
     }
 }
 
+/* 
 .projects {
     i {
         padding: 10px;
         margin-bottom: 15px;
     }
-}
+} */
 
 
 .projects {
@@ -1300,7 +1369,7 @@ ul li a:hover {
         text-align: center;
         text-transform: capitalize;
         font-size: 40px;
-        margin-bottom: 10px;
+        /* margin-bottom: 10px; */
 
     }
 }
@@ -1369,6 +1438,56 @@ ul li a:hover {
     }
 }
 
+.challenges {
+    margin: 200px 0;
+}
+
+.challenges {
+    .text-section {}
+}
+
+.challenges {
+    .text-section {
+        p {
+            text-transform: capitalize;
+            font-size: 30px;
+        }
+    }
+}
+
+.challenges {
+    .text-section p:first-child {
+        border-bottom: 3px solid white;
+        color: white;
+        width: fit-content;
+        margin-bottom: 10px;
+    }
+}
+
+.challenges {
+    .text-section p:nth-child(2) {
+        /* border-bottom: 2px solid red; */
+        width: fit-content;
+        margin-bottom: 10px;
+        color: white;
+    }
+}
+
+.challenges {
+    .test-names {
+        display: grid;
+    }
+}
+
+.challenges {
+    .test-names {
+        p {
+            border: 2px solid white;
+            width: fit-content;
+            padding: 10px;
+        }
+    }
+}
 
 .contacts {
     margin-top: 50px;
@@ -1379,7 +1498,7 @@ ul li a:hover {
 .contacts {
     .form {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
 }
 
@@ -1437,7 +1556,9 @@ ul li a:hover {
 .contacts {
     .text-section {
         img {
-            width: 120px;
+            width: 120px !important;
+            /* height: auto; */
+            object-fit: contain;
         }
     }
 }
@@ -1508,3 +1629,17 @@ ul li a:hover {
         }
     }
 }
+
+.footer {
+    background-color: #6e44ff;
+    padding: 50px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+/* .footer {
+    h2 {
+        font-size: 50px;
+
+    }
+} */

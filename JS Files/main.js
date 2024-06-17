@@ -45,6 +45,7 @@ reqFinish.onreadystatechange = function () {
       // let doneTestNum = document.createElement("p");
       let testDone = document.createElement("p");
       let testNames = document.querySelector(".test-names");
+      testDone.setAttribute("data-lang", "test");
       testDone.appendChild(document.createTextNode(compCh[i].name));
       testNames.appendChild(testDone);
     }

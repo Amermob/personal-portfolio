@@ -1,57 +1,3 @@
-// // Codeware username
-
-let req = new XMLHttpRequest();
-
-req.open("GET", "https://www.codewars.com/api/v1/users/Amermob");
-req.send();
-req.onreadystatechange = function () {
-  if (req.readyState === 4 && req.status === 200) {
-    const reqToJSON = JSON.parse(req.responseText);
-    // console.log(reqToJSON);
-    // document.querySelector(
-    //   ".first"
-    // ).innerHTML = `Completed Challenges: ${reqToJSON.codeChallenges.totalCompleted}`;
-    // document.querySelector(".second").innerHTML = `Honor: ${reqToJSON.honor}`;
-    // // console.log(reqToJSON);
-    // // console.log(reqToJSON.ranks.languages);
-    // document.querySelector(".fith").innerHTML = reqToJSON.ranks.languages;
-    // document.querySelector(
-    //   ".third"
-    // ).innerHTML = ` Rank: ${reqToJSON.ranks.overall.name}`;
-    // document.querySelector(
-    //   ".forth"
-    // ).innerHTML = `Score: ${reqToJSON.ranks.overall.score}`;
-    // document.querySelector(".fith").innerHTML = `Name: ${reqToJSON.name}`;
-    // document.querySelector(".six").innerHTML = `Skills: ${reqToJSON.skills}`;
-  }
-};
-
-// // // Challenges Completed
-
-let reqFinish = new XMLHttpRequest();
-reqFinish.open(
-  "GET",
-  "https://www.codewars.com/api/v1/users/Amermob/code-challenges/completed?page"
-);
-reqFinish.send();
-reqFinish.onreadystatechange = function () {
-  if (reqFinish.readyState === 4 && reqFinish.status === 200) {
-    const reqToJSN = JSON.parse(reqFinish.responseText);
-    const compCh = reqToJSN.data;
-    document.querySelector(
-      ".done-test>h3"
-    ).innerHTML = `Compeleted Challenges: ${reqToJSN.totalItems}`;
-    for (let i = 1; i <= compCh.length; i++) {
-      // let doneTestNum = document.createElement("p");
-      let testDone = document.createElement("p");
-      let testNames = document.querySelector(".test-names");
-      testDone.setAttribute("data-lang", "test");
-      testDone.appendChild(document.createTextNode(compCh[i].name));
-      testNames.appendChild(testDone);
-    }
-  }
-};
-
 function toggleText(event) {
   let text = event.textContent;
   if (text == "dark") {
@@ -110,7 +56,15 @@ document.querySelector(".submit").addEventListener("click", function (e) {
     From: "amermob5@gmail.com",
     Subject: document.querySelector("#subject").value,
     Body: ebody,
-  }).then((message) => alert(message));
+  }).then((message) => {
+    if (message == "OK") {
+      swal({
+        title: "Thank you!",
+        text: "Message Sent Successfully 😁!",
+        icon: "success",
+      });
+    }
+  });
   document.querySelector(".form").reset();
 });
 

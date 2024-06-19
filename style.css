@@ -425,7 +425,7 @@ option {
 
     .me {
         .box {
-            width: 900px !important;
+            max-width: 900px !important;
         }
     }
 
@@ -691,10 +691,99 @@ option {
 
 }
 
+@media (max-width:730px) {
+    .main-heading {
+        h2 {
+            font-size: 35px !important;
+        }
+    }
+
+    .me {
+        .box {
+            max-width: 400px !important;
+            margin: 0 auto !important;
+        }
+    }
+
+    .me {
+        .box {
+            img {
+                object-fit: fill;
+                width: 350px !important;
+                height: 350px !important;
+            }
+        }
+    }
+
+    .projects {
+        .box {
+            width: 400px;
+        }
+    }
+}
+
+@media (max-width:650px) {
+    .me {
+        .box {
+            min-width: 300px !important;
+            margin: 0 auto !important;
+        }
+    }
+
+    .me {
+        .img-section {
+            span {
+                height: 280px !important;
+                top: -339px !important;
+                left: -45px !important;
+                width: 220px !important;
+            }
+        }
+    }
+
+    .me {
+        .box {
+            .img-section {
+                height: 300px !important;
+            }
+        }
+    }
+
+    .me {
+        .box {
+            img {
+                object-fit: fill;
+                width: 250px !important;
+                max-height: 250px !important;
+            }
+        }
+    }
+}
+
+
+
+
+
+
 @media (max-width:600px) {
     .footer {
         h2 {
             font-size: 30px !important;
+        }
+    }
+
+    .me {
+        .box {
+            max-width: 200px !important;
+            margin: 0 auto !important;
+        }
+    }
+
+    .me {
+        .text-section {
+            p {
+                font-size: 15px !important;
+            }
         }
     }
 }
@@ -770,7 +859,7 @@ option {
 
     .me {
         .box {
-            max-width: 430px !important;
+            max-width: 200px !important;
         }
     }
 
@@ -802,13 +891,13 @@ option {
         }
     }
 
-    .me {
+    /* .me {
         .text-section {
             p {
-                font-size: 20px !important;
+                font-size: 15px !important;
             }
         }
-    }
+    } */
 
     .footer {
         h2 {
@@ -1338,7 +1427,7 @@ ul li a:hover {
 
 .projects {
     img {
-        min-width: 100%;
+        width: 100%;
         height: 270px;
         padding: 10px;
         border-radius: 15px;
@@ -1434,57 +1523,6 @@ ul li a:hover {
     .project {
         a:hover {
             box-shadow: 0 0 1em 0.1em #102A43;
-        }
-    }
-}
-
-.challenges {
-    margin: 200px 0;
-}
-
-.challenges {
-    .text-section {}
-}
-
-.challenges {
-    .text-section {
-        p {
-            text-transform: capitalize;
-            font-size: 30px;
-        }
-    }
-}
-
-.challenges {
-    .text-section p:first-child {
-        border-bottom: 3px solid white;
-        color: white;
-        width: fit-content;
-        margin-bottom: 10px;
-    }
-}
-
-.challenges {
-    .text-section p:nth-child(2) {
-        /* border-bottom: 2px solid red; */
-        width: fit-content;
-        margin-bottom: 10px;
-        color: white;
-    }
-}
-
-.challenges {
-    .test-names {
-        display: grid;
-    }
-}
-
-.challenges {
-    .test-names {
-        p {
-            border: 2px solid white;
-            width: fit-content;
-            padding: 10px;
         }
     }
 }

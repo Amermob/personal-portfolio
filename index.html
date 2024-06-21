@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <!-- main css style file -->
+    <link rel="stylesheet" href="/CSS Files/style.css">
+    <!-- media css file -->
+    <link rel="stylesheet" href="./CSS Files/media-css-file.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
@@ -21,6 +24,7 @@
 
 <body data-set="dark">
 
+    <!-- header starts  -->
     <div data-set="dark">
         <div class="container" data-set="dark">
             <div class="header" data-set="dark">
@@ -30,12 +34,10 @@
                         <span></span>
                         <span></span>
                     </div>
-
                     <span style="color: white; ">A<span style="color: white ;position: relative;">M</span></span>
                     <ul data-set="dark">
                         <li><a href="#me">me</a></li>
                         <li><a href="#projects">projects</a></li>
-                        <li><a href="#challenges">challenges</a></li>
                         <li><a href="#contacts">contact</a></li>
                         <select name="Language" id="language">
                             <option data-set="dark" id="ar" value="">Arabic</option>
@@ -46,6 +48,11 @@
                 </nav>
             </div>
         </div>
+
+        <!-- header ends  -->
+
+
+        <!-- landing starts -->
         <div class="landing container" data-set="dark">
             <div class="txt" data-set="dark">
                 <div class="text-section">
@@ -56,7 +63,6 @@
                 <h2>self-taught</h2>
                 <h2>front end developer</h2> -->
                     <div class="tech">
-                        <!-- <p data-set="dark">tech |</p> -->
                         <img title="HTML" src="./img/HTML.png" alt="">
                         <img title="CSS" src="./img/CSS.png" alt="">
                         <img title="JavaScript" src="./img/JS.png" alt="">
@@ -70,84 +76,98 @@
         </div>
         <!-- <div class="container"> -->
 
+        <!-- landing ends -->
 
-        <a id="me" href=""></a>
-        <!-- <div class="container" data-set="dark"> -->
-        <div data-set="dark" class="me">
-            <div class="main-heading">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <h2>about me</h2>
-                <!-- <h2>hehe</h2> -->
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-            </div>
-            <div class="box">
-                <div class="img-section">
-                    <img src=".//img/7534e1650b119967053e49fa066ab43a.png" alt="">
-                    <p data-set="dark">1996/04/06</p>
-                    <span></span>
+        <div data-set="dark" style="background-color: var(--secondary-background-color); padding-top: 1px;"
+            class="container">
+
+            <!-- about me starts -->
+            <a id="me" href=""></a>
+            <!-- <div class="container" data-set="dark"> -->
+            <div data-set="dark" class="me">
+                <div class="main-heading">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <h2>about me</h2>
+                    <!-- <h2>hehe</h2> -->
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                 </div>
-                <div class="text-section">
-                    <!-- <p>Hi, my name is Amer mohamed and i am currently working as a barista in Sombrero coffee shop
-                    Riyadh. <br>
-                    I tend to spend my time to learn how to be a front end developer. I started with HTML and then
-                    moved to
-                    CSS, and started working on a project, after that I started learning javascript.</p> -->
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae voluptatibus minus
-                        architecto
-                        ipsum dolor, sint assumenda non blanditiis amet ullam quisquam molestias voluptatem incidunt
-                        ducimus aperiam neque cupiditate soluta id!</p>
+                <div class="box">
+                    <div class="img-section">
+                        <img src=".//img/7534e1650b119967053e49fa066ab43a.png" alt="">
+                        <!-- <p data-set="dark">1996/04/06</p> -->
+                        <span></span>
+                    </div>
+                    <div class="text-section">
+                        <!-- <p>Hi, my name is Amer mohamed and i am currently working as a barista in Sombrero coffee shop
+                        Riyadh. <br>
+                        I tend to spend my time to learn how to be a front end developer. I started with HTML and then
+                        moved to
+                        CSS, and started working on a project, after that I started learning javascript.</p> -->
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae voluptatibus minus
+                            architecto
+                            ipsum dolor, sint assumenda non blanditiis amet ullam quisquam molestias voluptatem incidunt
+                            ducimus aperiam neque cupiditate soluta id!</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- </div> -->
-        <!-- </div> -->
+        <!-- about me ends -->
 
 
-        <div id="projects" class="projects" style="background-color: #6e44ff; padding: 100px;">
-            <div class="main-heading">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <h2>projects</h2>
-                <!-- <h2>hehe</h2> -->
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-            </div>
-            <div class="main-projects">
-                <div data-set="notdark" class="box">
-                    <img src="./img/sombrero.png" alt="">
-                    <div class="project sombrero" data-set="notdark">
-                        <h2 data-set="notdark">Sombrero Coffee Shop</h2>
-                        <p>sombrero is a colombian saudi owned coffee shop</p>
-                        <div class="link">
-                            <a href="https://amermob.github.io/Sombrero-Coffee-Shop/" target="_blank">Live Demo</a>
-                            <a href="https://github.com/Amermob/Sombrero-Coffee-Shop" target="_blank">source code</a>
+        <!-- porjects starts  -->
+        <div class="container">
+
+
+            <div id="projects" class="projects" style="padding: 60px;">
+                <div class="main-heading">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <h2>projects</h2>
+                    <!-- <h2>hehe</h2> -->
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="projects-box">
+                    <div data-set="notdark" class="project">
+                        <img src="./img/sombrero.png" alt="">
+                        <div class="text-section" data-set="notdark">
+                            <h2 data-set="notdark">Sombrero Coffee Shop</h2>
+                            <p>sombrero is a colombian saudi owned coffee shop</p>
+                            <div class="link">
+                                <a href="https://amermob.github.io/Sombrero-Coffee-Shop/" target="_blank">Live Demo</a>
+                                <a href="https://github.com/Amermob/Sombrero-Coffee-Shop" target="_blank">source
+                                    code</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="box" data-set="notdark">
-                    <img src="./img/sabahat al eid.png" alt="">
-                    <div class="project sombrero" data-set="notdark">
-                        <h2 data-set="notdark">Sabahat al eid</h2>
-                        <p>a construction based website made for a business focus.</p>
-                        <div class="link" data-set="notdark">
-                            <a href="https://sabahat-al-eid.com/" target="_blank">Live demo</a>
-                            <a href="https://github.com/Amermob/Sabahat-al-Eid" target="_blank">source code</a>
+                    <div class="project" data-set="notdark">
+                        <img src="./img/sabahat al eid.png" alt="">
+                        <div class="text-section" data-set="notdark">
+                            <h2 data-set="notdark">Sabahat al eid</h2>
+                            <p>a construction based website made for a business focus.</p>
+                            <div class="link" data-set="notdark">
+                                <a href="https://sabahat-al-eid.com/" target="_blank">Live demo</a>
+                                <a href="https://github.com/Amermob/Sabahat-al-Eid" target="_blank">source code</a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-            </div>
-            <div class="contribution">
-                <h2>contributed projects</h2>
+                </div>
+                <div class="contribution">
+                    <h2>contributed projects</h2>
+                </div>
             </div>
         </div>
     </div>
+    <!-- porjects ends  -->
 
 
-    <div id="contacts" style="padding: 100px;" data-set="dark">
-        <div data-set="dark" class="container">
+
+    <!-- contacts starts  -->
+    <div data-set="dark" class="container">
+        <div id="contacts" data-set="dark">
             <div data-set="dark" class="contacts">
                 <div class="main-heading">
                     <i class="fa-solid fa-star"></i>
@@ -185,13 +205,20 @@
         </div>
     </div>
 
+    <!-- contacts ends  -->
+
+
+    <!-- footer starts -->
     <div class="footer">
         <h2>all right reserved &#169; <span id="reserved"></span></h2>
     </div>
+    <!-- footer ends -->
 
-
+    <!-- smtp for sending the contacts info into a gmail -->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- SweetAlert File -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Main JS File -->
     <script src="./JS Files/main.js"></script>
 
 

@@ -11,8 +11,10 @@ function toggleText(event) {
 document.querySelector(".btn").addEventListener("click", function () {
   let dataTest = document.querySelectorAll(`[data-set="dark"]`);
   let notTest = document.querySelectorAll(`[data-set="notdark"]`);
+  let darkPurple = document.querySelectorAll(`[data-set="darkpurple"]`);
   dataTest.forEach((el) => el.classList.toggle("dark"));
   notTest.forEach((el) => el.classList.toggle("notdark"));
+  darkPurple.forEach((el) => el.classList.toggle("darkpurple"));
 });
 
 document.querySelector("#dots").onclick = function () {

@@ -47,16 +47,17 @@ body {
     /* background-color: var(--main-background-color); */
 }
 
-
 .header #dots+span {
     font-size: 50px;
     letter-spacing: -10px;
 }
 
-.header #dots+span:last-child {
+.header #dots+a {
     font-size: 50px;
     letter-spacing: -10px;
 }
+
+/* components starts*/
 
 
 /* main-heading starts */
@@ -81,6 +82,8 @@ body {
     }
 }
 
+/* main-heading ends */
+
 @keyframes color {
     0% {
         color: #fff;
@@ -92,7 +95,6 @@ body {
 }
 
 /* main-heading ends */
-
 
 /* components */
 
@@ -159,6 +161,7 @@ body {
 
 /* burgermenu */
 
+/* components ends*/
 
 /* start header */
 
@@ -199,8 +202,6 @@ a {
     }
 }
 
-
-
 .header {
     nav {
         display: flex;
@@ -210,7 +211,6 @@ a {
         text-transform: capitalize;
     }
 }
-
 
 h2 {
     color: white;
@@ -283,8 +283,6 @@ h2 {
     }
 }
 
-
-
 /* end header */
 
 /* start landing */
@@ -344,7 +342,6 @@ h2 {
     }
 }
 
-
 .landing {
     .txt {
         .tech {
@@ -390,7 +387,6 @@ h2 {
 
 /* about me starts */
 
-
 .me {
     margin-top: 100px;
     margin-bottom: 100px;
@@ -429,7 +425,6 @@ h2 {
     }
 }
 
-
 .me {
     .box {
         .text-section {
@@ -454,14 +449,12 @@ h2 {
 
 /* projects starts */
 
-
 .projects {
     .projects-box {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 40px;
-
     }
 }
 
@@ -469,7 +462,6 @@ h2 {
     .projects-box {
         .project {
             width: 550px;
-
             background-color: var(--secondary-background-color);
             border-radius: 10px;
             padding: 20px;
@@ -483,6 +475,7 @@ h2 {
             img {
                 width: 100%;
                 height: 300px;
+                border-radius: 10px;
             }
         }
     }
@@ -500,14 +493,16 @@ h2 {
     }
 }
 
-/* 
 .projects {
     .projects-box {
         .text-section {
-            h2 {}
+            h2 {
+                font-size: 40px;
+            }
         }
     }
-} */
+}
+
 
 .projects {
     .projects-box {
@@ -540,6 +535,20 @@ h2 {
                     background-color: var(--secondary-background-color);
                     border-radius: 10px;
                     color: white;
+                    font-size: 20px;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+}
+
+.projects {
+    .projects-box {
+        .project {
+            .link {
+                a:hover {
+                    filter: drop-shadow(0 0 1rem white);
                 }
             }
         }
@@ -554,7 +563,7 @@ h2 {
         width: fit-content;
         margin: 0 auto;
         margin-top: 30px;
-
+        border-radius: 10px;
     }
 }
 
@@ -656,7 +665,6 @@ h2 {
     }
 }
 
-
 .contacts {
     .input {
         textarea {
@@ -704,7 +712,6 @@ h2 {
 }
 
 /* contacts starts */
-
 
 /* starts footer  */
 .footer {

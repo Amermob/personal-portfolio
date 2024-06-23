@@ -13,7 +13,6 @@
     }
 
     /* header ends */
-
 }
 
 @media (max-width:1500px) {
@@ -40,8 +39,8 @@
 }
 
 @media (max-width:1200px) {
-    /* landing starts */
 
+    /* landing starts */
     .landing {
         .txt {
             .img-section {
@@ -112,7 +111,6 @@
 
     /* header ends */
 
-
     /* landing starts */
     .landing {
         .txt {
@@ -178,7 +176,6 @@
 
     /* about me starts */
 
-
     .me {
         .box {
             .img-section {
@@ -187,9 +184,6 @@
             }
         }
     }
-
-
-
 
     .me {
         .box {
@@ -226,7 +220,6 @@
 
 
 @media (max-width:875px) {
-
     .header {
         button {
             display: block;
@@ -258,7 +251,6 @@
         }
     }
 
-
     /* landing ends */
 
     /* footer starts */
@@ -273,8 +265,8 @@
 
 
 @media (max-width:875px) {
-    /* components starts */
 
+    /* components starts */
     #dots {
         display: block !important;
         position: absolute;
@@ -296,7 +288,6 @@
 
     /* components ends */
 
-
     /* header starts */
 
     .header {
@@ -312,12 +303,6 @@
             }
         }
     }
-
-    /* .header {
-        button {
-            display: none;
-        }
-    } */
 
     .header {
         nav {
@@ -336,12 +321,23 @@
                 font-size: 20px;
             }
         }
-
     }
 
     /* landing ends */
 
+    /* projects starts */
 
+    .projects {
+        .projects-box {
+            .text-section {
+                h2 {
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+
+    /* projects ends */
     /* contacts starts */
     .contacts {
         .form {
@@ -350,7 +346,6 @@
             align-items: center;
         }
     }
-
 
     .contacts {
         .text-section {
@@ -375,6 +370,7 @@
 
     /* components ends */
 
+    /* about me starts*/
     .me {
         .box {
             .img-section {
@@ -403,11 +399,61 @@
         }
     }
 
+    /* about me ends */
+
+    /* projects starts */
+
+    .projects {
+        & .projects-box {
+            .project {
+                width: 400px;
+            }
+        }
+    }
+
+    .projects {
+        & .projects-box {
+            & .text-section {
+                h2 {
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+
+    .projects {
+        & .projects-box {
+            & .text-section {
+                p {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .projects {
+        & .projects-box {
+            & .project {
+                & .link {
+                    a {
+                        /* border: 2px solid white; */
+                        padding: 10px;
+                        /* background-color: var(--secondary-background-color); */
+                        /* border-radius: 10px;
+                        color: white; */
+                        font-size: 18px;
+                        /* transition: 0.3s; */
+                    }
+                }
+            }
+        }
+    }
+
+    /* projects ends */
+
 }
 
-
 @media (max-width:600px) {
-
     /* landing starts */
 
     .landing {
@@ -463,6 +509,67 @@
 
     /* about me ends */
 
+    /* projects starts */
+
+    .projects {
+        & .projects-box {
+            .project {
+                width: 300px;
+            }
+        }
+    }
+
+    .projects {
+        & .projects-box {
+            & .project {
+                img {
+                    width: 100%;
+                    height: 200px;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+
+    .projects {
+        & .projects-box {
+            & .text-section {
+                h2 {
+                    font-size: 23px;
+                }
+            }
+        }
+    }
+
+    .projects {
+        & .projects-box {
+            & .text-section {
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .projects {
+        & .projects-box {
+            & .project {
+                & .link {
+                    a {
+                        /* border: 2px solid white; */
+                        padding: 10px;
+                        /* background-color: var(--secondary-background-color); */
+                        /* border-radius: 10px;
+                        color: white; */
+                        font-size: 15px;
+                        /* transition: 0.3s; */
+                    }
+                }
+            }
+        }
+    }
+
+    /* projects ends */
 
     /* footer starts */
     .footer {
@@ -475,8 +582,8 @@
 }
 
 @media (max-width:550px) {
-    /* components ends */
 
+    /* components ends */
     .main-heading {
         h2 {
             font-size: 25px !important;
@@ -487,6 +594,10 @@
         i {
             font-size: 18px;
         }
+    }
+
+    .landing .backball {
+        display: none;
     }
 
     /* components ends */
@@ -504,18 +615,7 @@
 
     /* header ends */
 
-
-
-    /* landing starts */
-
-    .landing .backball {
-        display: none;
-    }
-
-    /* landing starts */
-
     /* about me starts */
-
 
     .me {
         .box {
@@ -545,11 +645,58 @@
         }
     }
 
-
     /* about me ends */
 
+    /* projects starts */
 
+    .projects {
+        & .projects-box {
+            & .project {
+                img {
+                    width: 100%;
+                    height: 150px;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
 
+    /* 
+    .projects {
+        & .projects-box {
+            & .text-section {
+                h2 {
+                    font-size: 23px;
+                }
+            }
+        }
+    }
+
+    .projects {
+        & .projects-box {
+            & .text-section {
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .projects {
+        & .projects-box {
+            & .project {
+                & .link {
+                    a {
+                        padding: 10px;
+                        color: white; 
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    } */
+
+    /* projects ends */
 
     /* footer starts */
     .footer {
@@ -559,14 +706,12 @@
     }
 
     /* footer ends */
-
 }
 
 
 @media (max-width:430px) {
 
     /* about me starts */
-
 
     .me {
         .box {
@@ -596,6 +741,88 @@
         }
     }
 
+    /* project starts */
+
+
+    .projects {
+        & .projects-box {
+            .project {
+                /* width: 550px;
+                background-color: var(--secondary-background-color);
+                border-radius: 10px; */
+                padding: 10px;
+            }
+        }
+    }
+
+    .projects {
+        & .projects-box {
+            & .text-section {
+                h2 {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .projects {
+        & .projects-box {
+            & .text-section {
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+
+    .projects {
+        & .projects-box {
+            & .project {
+                img {
+                    width: 100%;
+                    height: 200px;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+
+    .projects {
+        & .projects-box {
+            & .text-section {
+                h2 {
+                    font-size: 19px;
+                }
+            }
+        }
+    }
+
+    .projects {
+        & .projects-box {
+            & .text-section {
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    .projects {
+        & .projects-box {
+            & .project {
+                & .link {
+                    a {
+                        padding: 5px;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    /* projects ends */
+
     /* about me ends */
 
     /* contacts starts */
@@ -613,7 +840,6 @@
     }
 
     /* contacts ends */
-
 }
 
 
@@ -652,8 +878,6 @@
     }
 
     /* landing ends */
-
-
     /* about me starts */
 
     .me {
@@ -684,8 +908,43 @@
         }
     }
 
-
     /* about me ends */
+
+    /* project starts */
+    .projects {
+        & .projects-box {
+            & .project {
+                img {
+                    width: 100%;
+                    height: 120px;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+
+    .projects {
+        .contribution {
+            h2 {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .projects {
+        & .projects-box {
+            & .project {
+                & .link {
+                    a {
+                        padding: 3px;
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    /* projects ends */
 
 
     /* footer starts */
@@ -701,6 +960,8 @@
 
 @media (max-width:350px) {
 
+
+    /* footer */
     .footer {
         h2 {
             font-size: 15px !important;
@@ -709,55 +970,57 @@
 }
 
 @media (max-width:320px) {
-    .txt .img-section img {
-        width: 250px !important;
-    }
 
-    .txt .text-section h2 {
-        font-size: 25px !important;
-    }
-
-    .text-section img {
-        width: 40px !important;
-        height: 40px !important;
-    }
-
-
-
-    .txt {
-        .contact {
-            p {
-                font-size: 15px !important;
+    /* landing starts */
+    .landing {
+        .txt {
+            .img-section {
+                img {
+                    width: 250px !important;
+                }
             }
         }
     }
 
-    .txt {
-        .tech {
-            p {
-                font-size: 15px !important;
+    .landing {
+        .txt {
+            .text-section {
+                h2 {
+                    font-size: 25px !important;
+                }
             }
         }
     }
 
-
-}
-
-
-
-@media (max-width:270px) {
-    .txt {
-        .contact {
-            i {
-                font-size: 35px !important;
+    .landing {
+        .text-section {
+            img {
+                width: 40px !important;
+                height: 40px !important;
             }
         }
     }
 
-    .text-section {
-        img {
-            width: 30px !important;
-            height: 30px !important;
+    .landing {
+        .txt {
+            .contact {
+                p {
+                    font-size: 15px !important;
+                }
+            }
         }
     }
+
+    .landing {
+        .txt {
+            .tech {
+                p {
+                    font-size: 15px !important;
+                }
+            }
+        }
+    }
+
+    /* landing ends */
+
 }

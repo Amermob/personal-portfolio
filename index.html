@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap" rel="stylesheet">
@@ -16,16 +16,15 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <!-- main css style file -->
+    <!-- main css file -->
     <link rel="stylesheet" href="./CSS Files/style.css">
-    <!-- media css file -->
-    <link rel="stylesheet" href="./CSS Files/media-css-file.css">
+    <!-- responsive css file -->
+    <link rel="stylesheet" href="./CSS Files/responsive.css">
     <title>hehes Portfolio</title>
 </head>
+<!-- header starts -->
 
-<body data-set="dark">
-
-    <!-- header starts  -->
+<body id="home" data-set="dark">
     <div data-set="dark">
         <div class="container" data-set="dark">
             <div class="header" data-set="dark">
@@ -35,7 +34,9 @@
                         <span></span>
                         <span></span>
                     </div>
-                    <span style="color: white; ">A<span style="color: white ;position: relative;">M</span></span>
+                    <a href="#home">
+                        <span style="color: white; ">A<span style="color: white;">M</span></span>
+                    </a>
                     <ul data-set="dark">
                         <li><a href="#me">me</a></li>
                         <li><a href="#projects">projects</a></li>
@@ -49,9 +50,7 @@
                 </nav>
             </div>
         </div>
-
         <!-- header ends  -->
-
 
         <!-- landing starts -->
         <div class="landing container" data-set="dark">
@@ -75,13 +74,10 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="container"> -->
 
         <!-- landing ends -->
-
         <div data-set="dark" style="background-color: var(--secondary-background-color); padding-top: 1px;"
             class="container">
-
             <!-- about me starts -->
             <a id="me" href=""></a>
             <!-- <div class="container" data-set="dark"> -->
@@ -119,8 +115,6 @@
 
         <!-- porjects starts  -->
         <div class="container">
-
-
             <div id="projects" class="projects" style="padding: 60px;">
                 <div class="main-heading">
                     <i class="fa-solid fa-star"></i>
@@ -138,8 +132,8 @@
                             <p>sombrero is a colombian saudi owned coffee shop</p>
                             <div class="link">
                                 <a href="https://amermob.github.io/Sombrero-Coffee-Shop/" target="_blank">Live Demo</a>
-                                <a href="https://github.com/Amermob/Sombrero-Coffee-Shop" target="_blank">source
-                                    code</a>
+                                <a href="https://github.com/Amermob/Sombrero-Coffee-Shop" target="_blank">Source
+                                    Code</a>
                             </div>
                         </div>
                     </div>
@@ -149,12 +143,11 @@
                             <h2 data-set="notdark">Sabahat al eid</h2>
                             <p>a construction based website made for a business focus.</p>
                             <div class="link" data-set="notdark">
-                                <a href="https://sabahat-al-eid.com/" target="_blank">Live demo</a>
-                                <a href="https://github.com/Amermob/Sabahat-al-Eid" target="_blank">source code</a>
+                                <a href="https://sabahat-al-eid.com/" target="_blank">Live Demo</a>
+                                <a href="https://github.com/Amermob/Sabahat-al-Eid" target="_blank">Source Code</a>
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <div class="contribution">
                     <h2>contributed projects</h2>
@@ -164,8 +157,6 @@
     </div>
     <!-- porjects ends  -->
 
-
-
     <!-- contacts starts  -->
     <div data-set="dark" class="container">
         <div id="contacts" data-set="dark">
@@ -173,8 +164,8 @@
                 <div class="main-heading">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                    <h2>about me</h2>
-                    <!-- <h2>hehe</h2> -->
+                    <!-- <h2>contacts</h2> -->
+                    <h2>hehe</h2>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                 </div>
@@ -183,9 +174,9 @@
                         <h2>hit me up:</h2>
                         <div class="contact">
                             <a href="https://github.com/Amermob" target="_blank"><img src="./img/GitHub white logo.png"
-                                    alt=""></a>
+                                    alt="" title="GitHub"></a>
                             <a href="https://discordapp.com/users/285849563422654465" target="_blank">
-                                <img src="./img/discord logo white.png" alt="">
+                                <img src="./img/discord logo white.png" title="Discord" alt="">
                             </a>
                             <p>E-mail : amermob5@gmail.com</p>
                             <p>Location: Saudi Arabia, Riyadh, al Olaya</p>
@@ -215,7 +206,7 @@
     </div>
     <!-- footer ends -->
 
-    <!-- smtp for sending the contacts info into a gmail -->
+    <!-- smtp for sending the contacts info into a e-mail -->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <!-- SweetAlert File -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>

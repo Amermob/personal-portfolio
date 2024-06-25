@@ -508,6 +508,7 @@ p {
     .projects-box {
         .project {
             .text-section {
+                margin-top: 20px;
                 text-align: center;
                 gap: 30px;
                 display: grid;

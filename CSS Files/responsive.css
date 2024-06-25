@@ -327,6 +327,14 @@
 
     /* projects starts */
 
+    .projects {
+        .projects-box {
+            .text-section {
+                gap: 15px !important;
+            }
+        }
+    }
+
 
     .projects {
         .projects-box {

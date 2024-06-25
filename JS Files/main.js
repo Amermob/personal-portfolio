@@ -1,3 +1,4 @@
+// change the text of the button for the darkmode
 function toggleText(event) {
   let text = event.textContent;
   if (text == "dark") {
@@ -17,6 +18,7 @@ document.querySelector(".btn").addEventListener("click", function () {
   darkPurple.forEach((el) => el.classList.toggle("darkpurple"));
 });
 
+// burger menu starts
 document.querySelector("#dots").onclick = function () {
   document.querySelector("ul").classList.toggle("burgermenu");
   document
@@ -28,6 +30,7 @@ document.querySelector("#dots").onclick = function () {
   document.querySelector("#dots span:last-child").classList.toggle("lastspan");
 };
 
+// add background color on nav after scroll
 window.onscroll = function () {
   if (this.scrollY >= 200) {
     document.querySelector(".header").style.backgroundColor = "#00A8E8";
@@ -36,6 +39,7 @@ window.onscroll = function () {
   }
 };
 
+// contact section
 let username = document.querySelector("#name");
 let email = document.querySelector("#email");
 let phone = document.querySelector("#number");
@@ -67,8 +71,9 @@ document.querySelector(".submit").addEventListener("click", function (e) {
       });
     }
   });
+  // after sending the info the input filed will be clear
   document.querySelector(".form").reset();
 });
 
-//all right reserved
+//all right reserved date
 document.querySelector("#reserved").innerHTML = new Date().getFullYear();

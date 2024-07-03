@@ -46,12 +46,12 @@ body {
     margin-left: auto;
 }
 
-.header #dots+span {
+.header nav .a {
     font-size: 50px;
     letter-spacing: -10px;
 }
 
-.header #dots+a {
+.header nav .m {
     font-size: 50px;
     letter-spacing: -10px;
 }
@@ -104,12 +104,12 @@ body {
     height: 40px;
     display: none;
     margin-top: 10px;
-    position: relative;
+    /* position: relative; */
     transition: 0.4s;
 }
 
 #dots span {
-    width: 100%;
+    width: 40px;
     height: 3px;
     background-color: #fff;
     display: block;
@@ -120,15 +120,15 @@ body {
 
 
 #dots span:first-child {
-    top: 0px;
+    margin-top: 0px;
 }
 
 #dots span:nth-child(2) {
-    top: 12px;
+    margin-top: 12px;
 }
 
 #dots span:last-child {
-    top: 24px;
+    margin-top: 24px;
 }
 
 .fristspan {
@@ -285,18 +285,21 @@ p {
             color: white;
             font-size: 40px;
             border: none;
-            margin-right: 15px;
+            margin: 0 15px;
         }
     }
 }
 
 .header {
     nav {
-        option {
-            background-color: black;
+        select {
+            option {
+                color: black;
+            }
         }
     }
 }
+
 
 /* end header */
 

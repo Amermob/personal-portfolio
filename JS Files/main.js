@@ -77,3 +77,41 @@ document.querySelector(".submit").addEventListener("click", function (e) {
 
 //all right reserved date
 document.querySelector("#reserved").innerHTML = new Date().getFullYear();
+
+let translations = {
+  en: {
+    me: "me",
+    projects: "projects",
+  },
+  ar: {
+    me: "انا",
+    projects: "مشاريع",
+  },
+};
+
+let languageSelector = document.querySelector("#language");
+
+languageSelector.addEventListener("change", (event) => {
+  setLangauge(event.target.value);
+  sessionStorage.setItem("lang", event.target.value);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  setLangauge(sessionStorage.getItem("lang"));
+});
+
+const setLangauge = (langauge) => {
+  const elements = document.querySelectorAll("[data-lang]");
+  elements.forEach((element) => {
+    const languageKey = element.getAttribute("data-lang");
+    element.textContent = translations[langauge][languageKey];
+  });
+  // document.dir = langauge === "ar" ? "rtl" : "ltr";
+  if (langauge === "ar") {
+    document.dir = "rtl";
+    window.location.href + "/ar";
+  } else {
+    document.dir = "ltr";
+    window.location.href + "/en";
+  }
+};

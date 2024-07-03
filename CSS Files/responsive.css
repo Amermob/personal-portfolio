@@ -220,6 +220,17 @@
 
 
 @media (max-width:875px) {
+    /* .header {
+        ul {
+            li {
+                list-style: none;
+                padding: 35px;
+                font-size: 40px;
+                text-transform: capitalize;
+            }
+        }
+    } */
+
     .header {
         button {
             display: block;
@@ -269,9 +280,6 @@
     /* components starts */
     #dots {
         display: block !important;
-        position: absolute;
-        left: calc(100% - 50px);
-        top: 10px;
     }
 
     .main-heading {

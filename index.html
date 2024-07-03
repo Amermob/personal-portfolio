@@ -2,19 +2,18 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
-    <!-- google fonts -->
+    <!-- English Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <!-- Font Family -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <!-- main css file -->
     <link rel="stylesheet" href="./CSS Files/style.css">
@@ -29,21 +28,21 @@
         <div class="container" data-set="dark">
             <div class="header" data-set="dark">
                 <nav data-set="dark">
+                    <a href="#home">
+                        <span class="a" style="color: white; ">A<span class="m" style="color: white;">M</span></span>
+                    </a>
                     <div id="dots">
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
-                    <a href="#home">
-                        <span style="color: white; ">A<span style="color: white;">M</span></span>
-                    </a>
                     <ul data-set="dark">
-                        <li><a href="#me">me</a></li>
-                        <li><a href="#projects">projects</a></li>
+                        <li><a href="#me" data-lang="me">me</a></li>
+                        <li><a href="#projects" data-lang="projects">projects</a></li>
                         <li><a href="#contacts">contact</a></li>
                         <select name="Language" id="language">
-                            <option data-set="dark" id="ar" value="">Arabic</option>
-                            <option data-set="dark" id="en" value="" selected>English
+                            <option data-set="dark" id="en" value="en">English
+                            <option data-set="dark" id="ar" value="ar">Arabic</option>
                             </option>
                         </select>
                         <button onclick="toggleText(this)" class="btn">dark</button>
@@ -153,7 +152,7 @@
                         <img src="./img/ps store.png" alt="">
                         <div class="text-section" data-set="notdark">
                             <h2 data-set="notdark">PS Store</h2>
-                            <p>An e-commerce website to buy playstation console and games</p>
+                            <p>An e-commerce website to buy PlayStation consoles and games</p>
                             <div class="link" data-set="notdark">
                                 <a href="https://amermob.github.io/ps-store/" target="_blank">Live Demo</a>
                                 <a href="https://github.com/Amermob/ps-store" target="_blank">Source Code</a>

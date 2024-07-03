@@ -220,25 +220,27 @@
 
 
 @media (max-width:875px) {
-    /* .header {
-        ul {
-            li {
-                list-style: none;
-                padding: 35px;
-                font-size: 40px;
-                text-transform: capitalize;
-            }
-        }
-    } */
 
+    /* header starts */
     .header {
         button {
             display: block;
             position: absolute;
             top: 76%;
-            left: 0;
             padding: 10px 15px;
-            margin-left: 15px;
+            margin: 0 15px;
+        }
+    }
+
+    /* header ends */
+
+
+    /* landing starts */
+    .header {
+        nav {
+            select {
+                margin: 0;
+            }
         }
     }
 

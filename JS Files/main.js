@@ -78,14 +78,68 @@ document.querySelector(".submit").addEventListener("click", function (e) {
 //all right reserved date
 document.querySelector("#reserved").innerHTML = new Date().getFullYear();
 
+// changing the language
 let translations = {
   en: {
+    // header
     me: "me",
     projects: "projects",
+    contacts: "contacts",
+    // landing
+    myName: "Amer Mohamed",
+    selfTaught: "self-taught",
+    frontEnd: "front end developer",
+    // about me
+    aboutMe: "about me",
+    infoAboutMe:
+      "An aspiring front-end developer located in Saudi Arabia Riyadh, currently working as a barista at Sombrero coffee shop. I tend to spend my free time learning to be a better dev, playing FPS games, or reading some 'manga'.",
+    // projects
+    sombrero: "Sombrero Coffee Shop",
+    sombreroInfo: "sombrero is a Colombian Saudi-owned coffee shop",
+    webLink: "Live Demo",
+    source: "Source Code",
+    sabahat: "Sabahat al eid",
+    sabahatInfo: "a construction based website made for a business focus",
+    psStore: "Arab PS Store",
+    psStoreInfo: "An e-commerce website to buy PlayStation consoles and games",
+    porgress: "in Progress...",
+    contributed: "contributed projects",
+    inProgress: "work in progress...",
+    // Contacts
+    contacts: "contacts",
+    hitMeUp: "hit me up:",
+    location: "Location: Saudi Arabia, Riyadh, al Olaya",
+    send: "submit",
   },
   ar: {
-    me: "انا",
-    projects: "مشاريع",
+    // header
+    me: "أنا",
+    projects: "مشاريعي",
+    contacts: "للتواصل",
+    // landing
+    myName: "عامر محمد",
+    selfTaught: "متعلم بذاته",
+    frontEnd: "مطور صفحة الويب",
+    // about me
+    aboutMe: ":معلومات عني",
+    infoAboutMe:
+      "شاب شغوف يطمح انا يصبح مطور صفحة الويب متواجد حاليا في الرياض حق العليا, اعمل حاليا كباريستا في محل سومبريرو, بعد ما انتهي من العمل اقضي وقتي في اقم بتحسين مستواي كمطور صفحة الويب, في بعض الوقت أقوم بي لعب العاب او قراءة مانجا",
+    // projects
+    sombrero: "سومبريرو",
+    sombreroInfo: "سومبريرو محل قهوة عربي بطابع كولومبي ",
+    webLink: "رابط الموقع",
+    source: "الكود على موقع قيت هوب",
+    sabahat: "صباحات العيد لهدم المباني",
+    sabahatInfo: "موقع لي عرض معلومات عن المؤسسة ",
+    psStore: "سوني العرب",
+    psStoreInfo: "موقع لشراء أجهزة البلايستيشن وملحقاته من العاب و أجهزة تحكم",
+    porgress: "جاري العمل على المشروع",
+    contributed: "المشاريع المساهمة",
+    inProgress: "...جاري العمل",
+    // Contacts
+    hitMeUp: "حياك الله على:",
+    location: "الموقع: الرياض حي العليا",
+    send: "ارسل",
   },
 };
 
@@ -106,12 +160,11 @@ const setLangauge = (langauge) => {
     const languageKey = element.getAttribute("data-lang");
     element.textContent = translations[langauge][languageKey];
   });
-  // document.dir = langauge === "ar" ? "rtl" : "ltr";
   if (langauge === "ar") {
     document.dir = "rtl";
-    window.location.href + "/ar";
+    `${window.location.href}/ar`;
   } else {
     document.dir = "ltr";
-    window.location.href + "/en";
+    `${window.location.href}/en`;
   }
 };

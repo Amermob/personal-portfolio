@@ -42,11 +42,10 @@
                     <ul data-set="dark">
                         <li><a href="#me" data-lang="me">me</a></li>
                         <li><a href="#projects" data-lang="projects">projects</a></li>
-                        <li><a href="#contacts">contact</a></li>
+                        <li><a href="#contacts" data-lang="contacts">contacts</a></li>
                         <select name="Language" id="language">
-                            <option data-set="dark" id="en" value="en">English
+                            <option data-set="dark" id="en" value="en">English</option>
                             <option data-set="dark" id="ar" value="ar">Arabic</option>
-                            </option>
                         </select>
                         <button onclick="toggleText(this)" class="btn">dark</button>
                     </ul>
@@ -59,9 +58,9 @@
         <div class="landing container" data-set="dark">
             <div class="txt" data-set="dark">
                 <div class="text-section">
-                    <h2>oga ponga</h2>
-                    <h2>i like</h2>
-                    <h2>video gamo</h2>
+                    <h2 data-lang="myName">oga ponga</h2>
+                    <h2 data-lang="selfTaught">i like</h2>
+                    <h2 data-lang="frontEnd">video gamo</h2>
                     <!-- <h2>Amer Mohamed</h2>
                 <h2>self-taught</h2>
                 <h2>front end developer</h2> -->
@@ -88,7 +87,7 @@
                 <div class="main-heading">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                    <h2>about me</h2>
+                    <h2 data-lang="aboutMe">about me</h2>
                     <!-- <h2>hehe</h2> -->
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -105,10 +104,9 @@
                         I tend to spend my time to learn how to be a front end developer. I started with HTML and then
                         moved to
                         CSS, and started working on a project, after that I started learning javascript.</p> -->
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae voluptatibus minus
-                            architecto
-                            ipsum dolor, sint assumenda non blanditiis amet ullam quisquam molestias voluptatem incidunt
-                            ducimus aperiam neque cupiditate soluta id!</p>
+                        <p data-lang="infoAboutMe">An aspiring front-end developer located in Saudi Arabia Riyadh,
+                            currently working as a barista at Sombrero coffee shop. I tend to spend my free time
+                            learning to be a better dev, playing FPS games, or reading some manga.</p>
                     </div>
                 </div>
             </div>
@@ -122,7 +120,7 @@
                 <div class="main-heading">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                    <h2>projects</h2>
+                    <h2 data-lang="projects">projects</h2>
                     <!-- <h2>hehe</h2> -->
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -131,11 +129,13 @@
                     <div data-set="notdark" class="project">
                         <img src="./img/sombrero.png" alt="">
                         <div class="text-section" data-set="notdark">
-                            <h2 data-set="notdark">Sombrero Coffee Shop</h2>
-                            <p>sombrero is a Colombian Saudi-owned coffee shop</p>
+                            <h2 data-set="notdark" data-lang="sombrero">Sombrero Coffee Shop</h2>
+                            <p data-lang="sombreroInfo">sombrero is a Colombian Saudi-owned coffee shop</p>
                             <div class="link">
-                                <a href="https://amermob.github.io/Sombrero-Coffee-Shop/" target="_blank">Live Demo</a>
-                                <a href="https://github.com/Amermob/Sombrero-Coffee-Shop" target="_blank">Source
+                                <a href="https://amermob.github.io/Sombrero-Coffee-Shop/" target="_blank"
+                                    data-lang="webLink">Live Demo</a>
+                                <a href="https://github.com/Amermob/Sombrero-Coffee-Shop" target="_blank"
+                                    data-lang="source">Source
                                     Code</a>
                             </div>
                         </div>
@@ -143,30 +143,32 @@
                     <div class="project" data-set="notdark">
                         <img src="./img/sabahat al eid.png" alt="">
                         <div class="text-section" data-set="notdark">
-                            <h2 data-set="notdark">Sabahat al eid</h2>
-                            <p>a construction based website made for a business focus</p>
+                            <h2 data-set="notdark" data-lang="sabahat">Sabahat al eid</h2>
+                            <p data-lang="sabahatInfo">a construction based website made for a business focus</p>
                             <div class="link" data-set="notdark">
-                                <a href="https://sabahat-al-eid.com/" target="_blank">Live Demo</a>
-                                <a href="https://github.com/Amermob/Sabahat-al-Eid" target="_blank">Source Code</a>
+                                <a href="https://sabahat-al-eid.com/" target="_blank" data-lang="webLink">Live Demo</a>
+                                <a href="https://github.com/Amermob/Sabahat-al-Eid" target="_blank"
+                                    data-lang="source">Source Code</a>
                             </div>
                         </div>
                     </div>
-<!--                     <div class="project" data-set="notdark">
+                    <div class="project" data-set="notdark">
                         <img src="./img/ps store.png" alt="">
                         <div class="text-section" data-set="notdark">
-                            <h2 data-set="notdark">PS Store</h2>
-                            <p>An e-commerce website to buy PlayStation consoles and games</p>
+                            <h2 data-set="notdark" data-lang="psStore">Arab PS Store</h2>
+                            <p data-lang="psStoreInfo">An e-commerce website to buy PlayStation consoles and games, made
+                                purely for practice</p>
                             <div class="link" data-set="notdark">
-                                <a href="https://amermob.github.io/ps-store/" target="_blank">Live Demo</a>
-                                <a href="https://github.com/Amermob/ps-store" target="_blank">Source Code</a>
+                                <a href="#" target="_blank" data-lang="porgress">in Progress...</a>
+                                <!-- <a href="" target="_blank">in Progress</a> -->
                             </div>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
-<!--                 <div class="contribution">
-                    <h2>contributed projects</h2>
-                    
-                </div> -->
+                <div class="contribution">
+                    <h2 data-lang="contributed">contributed projects</h2>
+                    <h2 data-lang="inProgress">work in progress...</h2>
+                </div>
             </div>
         </div>
     </div>
@@ -180,13 +182,13 @@
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <!-- <h2>contacts</h2> -->
-                    <h2>hehe</h2>
+                    <h2 data-lang="contacts">contacts</h2>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                 </div>
                 <form class="form">
                     <div class="text-section">
-                        <h2>hit me up:</h2>
+                        <h2 data-lang="hitMeUp">hit me up:</h2>
                         <div class="contact">
                             <a href="https://github.com/Amermob" target="_blank"><img src="./img/GitHub white logo.png"
                                     alt="" title="GitHub"></a>
@@ -194,7 +196,7 @@
                                 <img src="./img/discord logo white.png" title="Discord" alt="">
                             </a>
                             <p>E-mail : amermob5@gmail.com</p>
-                            <p>Location: Saudi Arabia, Riyadh, al Olaya</p>
+                            <p data-lang="location">Location: Saudi Arabia, Riyadh, al Olaya</p>
                         </div>
                     </div>
                     <div class="input">
@@ -205,7 +207,7 @@
                         <input type="email" placeholder="E-mail" id="email" required>
                         <input type="text" placeholder="Subject" id="subject" required>
                         <textarea placeholder="Your Message" id="message" required></textarea>
-                        <button class="submit " type="submit">submit</button>
+                        <button class="submit " type="submit" data-lang="send">submit</button>
                     </div>
                 </form>
             </div>

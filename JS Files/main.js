@@ -109,6 +109,11 @@ let translations = {
     contacts: "contacts",
     hitMeUp: "hit me up:",
     location: "Location: Saudi Arabia, Riyadh, al Olaya",
+    yourName: "Your Name",
+    phone: "Phone Number",
+    email: "E-mail",
+    subject: "Reason For Your Message",
+    message: "Your Message",
     send: "submit",
   },
   ar: {
@@ -139,7 +144,12 @@ let translations = {
     // Contacts
     hitMeUp: "حياك الله على:",
     location: "الموقع: الرياض حي العليا",
-    send: "ارسل",
+    yourName: "الاسم",
+    phone: "رقم الجوال",
+    email: "البريد الاكتروني",
+    subject: "سبب التواصل",
+    message: "تفاصيل الرسالة",
+    send: "أرسل",
   },
 };
 

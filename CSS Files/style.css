@@ -681,11 +681,12 @@ p {
         flex-direction: column;
         border: 5px solid var(--secondary-background-color);
         padding: 30px 15px;
-        gap: 35px;
+        gap: 20px;
         width: 380px;
         border-radius: 5px;
     }
 }
+
 
 .contacts {
     .input {
@@ -695,6 +696,15 @@ p {
             border-radius: 5px;
             border: none;
             font-size: 20px;
+        }
+    }
+}
+
+.contacts {
+    .input {
+        label {
+            font-size: 25px;
+            color: white;
         }
     }
 }

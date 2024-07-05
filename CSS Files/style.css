@@ -732,7 +732,7 @@ p {
 
 .contacts {
     .input {
-        .test {
+        .name-number {
             display: flex;
             gap: 15px;
         }

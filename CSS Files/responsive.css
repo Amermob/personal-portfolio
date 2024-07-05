@@ -870,6 +870,14 @@
         }
     }
 
+    .contacts {
+        .input {
+            label {
+                font-size: 23px;
+            }
+        }
+    }
+
     /* contacts ends */
 }
 

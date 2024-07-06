@@ -92,7 +92,7 @@ let translations = {
     // about me
     aboutMe: "about me",
     infoAboutMe:
-      "An aspiring front-end developer located in Saudi Arabia Riyadh, currently working as a barista at Sombrero coffee shop. I tend to spend my free time learning to be a better dev, playing FPS games, or reading some 'manga'.",
+      "A young man residing in Riyadh is driven by a passion for front-end web page development. While working as a barista at Sombrero Cafe, I devote my spare moments to honing my web development skills, with the ambition of fulfilling my career goals in this domain. Apart from my professional pursuits, I find pleasure in gaming.",
     // projects
     sombrero: "Sombrero Coffee Shop",
     sombreroInfo: "sombrero is a Colombian Saudi-owned coffee shop",
@@ -128,7 +128,7 @@ let translations = {
     // about me
     aboutMe: "معلومات عني:",
     infoAboutMe:
-      "شاب شغوف يطمح انا يصبح مطور صفحة الويب متواجد حاليا في الرياض حي العليا, اعمل حاليا كباريستا في محل سومبريرو, بعد ما انتهي من العمل اقضي وقتي بتحسين مستواي كمطور صفحة الويب, في بعض الاوقات أقوم بي لعب العاب او قراءة مانجا",
+      "شاب شغوف بتحقيق حلمه في مجال تطوير صفحات الويب Front-end. أعيش في حي العليا بالرياض وأعمل حاليًا كباريستا في مقهى سومبريرو. أستثمر وقت الفراغ في تطوير مهاراتي كمطور ويب، وأسعى جاهدًا لتحقيق هدفي المهني كمطوِّر ويب. بجانب عملي وتطوير مهاراتي، أستمتع في بعض الأوقات بممارسة ألعاب الفيديو.",
     // projects
     sombrero: "سومبريرو",
     sombreroInfo: "سومبريرو محل قهوة عربي بطابع كولومبي ",

@@ -587,13 +587,8 @@
             & .project {
                 & .link {
                     a {
-                        /* border: 2px solid white; */
                         padding: 10px;
-                        /* background-color: var(--secondary-background-color); */
-                        /* border-radius: 10px;
-                        color: white; */
                         font-size: 15px;
-                        /* transition: 0.3s; */
                     }
                 }
             }
@@ -692,40 +687,6 @@
         }
     }
 
-    /* 
-    .projects {
-        & .projects-box {
-            & .text-section {
-                h2 {
-                    font-size: 23px;
-                }
-            }
-        }
-    }
-
-    .projects {
-        & .projects-box {
-            & .text-section {
-                p {
-                    font-size: 18px;
-                }
-            }
-        }
-    }
-
-    .projects {
-        & .projects-box {
-            & .project {
-                & .link {
-                    a {
-                        padding: 10px;
-                        color: white; 
-                        font-size: 15px;
-                    }
-                }
-            }
-        }
-    } */
 
     /* projects ends */
 
@@ -975,8 +936,9 @@
             & .project {
                 & .link {
                     a {
-                        padding: 3px;
-                        font-size: 10px;
+                        padding: 5px;
+                        font-size: 12.5px;
+                        margin: 3px;
                     }
                 }
             }

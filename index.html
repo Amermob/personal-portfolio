@@ -49,7 +49,9 @@
                             <option data-set="dark" id="en" value="en">English</option>
                             <option data-set="dark" id="ar" value="ar">Arabic</option>
                         </select>
-                        <button onclick="toggleText(this)" class="btn">dark</button>
+                        <div class="btn background">
+                            <div class="ball" id="btn"></div>
+                        </div>
                     </ul>
                 </nav>
             </div>
@@ -196,18 +198,21 @@
                                 <img src="./img/discord logo white.png" title="Discord" alt="">
                             </a>
                             <p>E-mail : amermob5@gmail.com</p>
-                            <p data-lang="location">Location: Saudi Arabia, Riyadh, al Olaya</p>
+                            <p data-lang="location">Location: Riyadh, Al Olaya</p>
+                            <hr>
+                            <a class="cv"
+                                href="https://drive.google.com/file/d/1J60CCjQBzHcleD-gvZnSgPp1Tw_o65EY/view?usp=drivesdk"
+                                target="_blank" data-lang="cv">View Resume</a>
                         </div>
                     </div>
                     <div class="input">
                         <div class="name-number">
                             <div>
-
                                 <label for="name" data-lang="yourName">Your Name:</label>
                                 <input type="text" id="name" required>
                             </div>
                             <div>
-                                <label for="number" data-lang="phone">Phone Num:</label>
+                                <label for="number" data-lang="phone">Phone Number:</label>
                                 <input type="number" id="number">
                             </div>
                         </div>

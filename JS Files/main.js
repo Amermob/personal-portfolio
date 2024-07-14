@@ -1,21 +1,36 @@
-// change the text of the button for the darkmode
-function toggleText(event) {
-  let text = event.textContent;
-  if (text == "dark") {
-    event.innerHTML = "light";
-  } else {
-    event.innerHTML = "dark";
-  }
+//Dark Mode
+let dataDark = document.querySelectorAll(`[data-set="dark"]`);
+let notTest = document.querySelectorAll(`[data-set="notdark"]`);
+let darkPurple = document.querySelectorAll(`[data-set="darkpurple"]`);
+
+const enableDarkMode = () => {
+  dataDark.forEach((el) => el.classList.add("dark"));
+  notTest.forEach((el) => el.classList.add("notdark"));
+  darkPurple.forEach((el) => el.classList.add("darkpurple"));
+  localStorage.setItem("darkMode", "enabled");
+};
+
+const disableDarkMode = () => {
+  dataDark.forEach((el) => el.classList.remove("dark"));
+  notTest.forEach((el) => el.classList.remove("notdark"));
+  darkPurple.forEach((el) => el.classList.remove("darkpurple"));
+  localStorage.setItem("darkMode", "disabled");
+};
+if (localStorage.getItem("darkMode")) {
+  enableDarkMode();
+} else {
+  disableDarkMode();
 }
 
-//Dark Mode
 document.querySelector(".btn").addEventListener("click", function () {
-  let dataTest = document.querySelectorAll(`[data-set="dark"]`);
-  let notTest = document.querySelectorAll(`[data-set="notdark"]`);
-  let darkPurple = document.querySelectorAll(`[data-set="darkpurple"]`);
-  dataTest.forEach((el) => el.classList.toggle("dark"));
-  notTest.forEach((el) => el.classList.toggle("notdark"));
-  darkPurple.forEach((el) => el.classList.toggle("darkpurple"));
+  document.querySelector(".ball").classList.toggle("ball-dark");
+  if (localStorage.getItem("darkMode") !== "enabled") {
+    document.querySelector(".background").style.backgroundColor = "#6e44ff";
+    enableDarkMode();
+  } else {
+    document.querySelector(".background").style.backgroundColor = "#00A8E8";
+    disableDarkMode();
+  }
 });
 
 // burger menu starts
@@ -108,7 +123,8 @@ let translations = {
     // Contacts
     contacts: "contacts",
     hitMeUp: "hit me up:",
-    location: "Location: Saudi Arabia, Riyadh, al Olaya",
+    location: "Location: Riyadh, al Olaya",
+    cv: "View Resume",
     yourName: "Your Name:",
     phone: "Phone Number:",
     mail: "E-mail:",
@@ -144,6 +160,7 @@ let translations = {
     // Contacts
     hitMeUp: "حياك الله على:",
     location: "الموقع: الرياض حي العليا",
+    cv: "السيرة الذاتية",
     yourName: "الاسم:",
     phone: "رقم الجوال:",
     mail: "البريد الاكتروني:",
@@ -156,6 +173,8 @@ let translations = {
 let languageSelector = document.querySelector("#language");
 
 languageSelector.addEventListener("change", (event) => {
+  // location.reload();
+
   setLangauge(event.target.value);
   sessionStorage.setItem("lang", event.target.value);
 });

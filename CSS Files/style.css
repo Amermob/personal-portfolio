@@ -416,7 +416,8 @@ p {
             img {
                 width: 80px;
                 height: 80px;
-                margin: 20px;
+                margin: 10px;
+                /* chnaged the margin of the image in the skills from 20 to 10 */
                 border-radius: 10px;
             }
         }

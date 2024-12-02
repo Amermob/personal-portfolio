@@ -1,0 +1,981 @@
+@media (max-width:1700px) {
+
+    /* header starts */
+    .landing {
+        .txt {
+            .img-section {
+                img {
+                    width: 700px;
+                    height: 700px;
+                }
+            }
+        }
+    }
+
+    /* header ends */
+}
+
+@media (max-width:1500px) {
+
+    /* landing starts */
+    .landing {
+        .txt {
+            .img-section {
+                img {
+                    width: 500px;
+                    height: 500px;
+                }
+            }
+        }
+    }
+
+    /* landing ends */
+
+    /* components */
+    .backball {
+        width: 700px !important;
+        height: 700px !important;
+    }
+}
+
+@media (max-width:1200px) {
+
+    /* landing starts */
+    .landing {
+        .txt {
+            .img-section {
+                img {
+                    width: 500px;
+                }
+            }
+        }
+    }
+
+    .landing {
+        .txt {
+            h2 {
+                font-size: 65px;
+            }
+        }
+    }
+
+    .landing {
+        .txt {
+            .tech {
+                img {
+                    width: 65px;
+                    height: 65px;
+                }
+            }
+        }
+    }
+
+    /* landing ends */
+
+    /* footer starts */
+    .footer {
+        h2 {
+            font-size: 45px;
+        }
+    }
+
+    /* footer ends */
+
+}
+
+
+@media (max-width:1000px) {
+
+    /* header starts */
+    .header {
+        nav {
+            ul {
+                li {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+
+    .header {
+        nav {
+            select {
+                font-size: 30px;
+            }
+        }
+    }
+
+    button {
+        font-size: 30px;
+    }
+
+    /* header ends */
+
+    /* landing starts */
+    .landing {
+        .txt {
+            .img-section {
+                img {
+                    width: 400px;
+                    height: 400px;
+                }
+            }
+        }
+    }
+
+    .landing {
+        .txt {
+            h2 {
+                font-size: 55px;
+            }
+        }
+    }
+
+    .landing {
+        .txt {
+            .tech {
+                img {
+                    width: 55px;
+                    height: 55px;
+                }
+            }
+        }
+    }
+
+    .landing {
+        .txt {
+            .tech {
+                p {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+
+    .landing {
+        .txt {
+            .contact {
+                p {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+
+    .landing {
+        .txt {
+            .contact {
+                i {
+                    font-size: 65px;
+                }
+            }
+        }
+    }
+
+    /* landing ends */
+
+    /* about me starts */
+
+    .me {
+        .box {
+            .img-section {
+                width: 400px;
+                height: 400px;
+            }
+        }
+    }
+
+    .me {
+        .box {
+            .text-section {
+                width: 500px;
+            }
+        }
+    }
+
+    .me {
+        .box {
+            .text-section {
+                p {
+                    font-size: 23px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    /* about me ends */
+    /* footer starts */
+    .footer {
+        h2 {
+            font-size: 40px;
+        }
+    }
+
+    /* footer ends */
+
+}
+
+
+
+
+@media (max-width:875px) {
+
+    /* header starts */
+    .header {
+        button {
+            display: block;
+            position: absolute;
+            top: 76%;
+            padding: 10px 15px;
+            margin: 0 15px;
+        }
+    }
+
+    /* header ends */
+
+
+    /* landing starts */
+    .header {
+        nav {
+            select {
+                margin: 0;
+            }
+        }
+    }
+
+    .landing {
+        .txt {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .landing {
+        .txt {
+            .img-section {
+                img {
+                    margin: 20px 0;
+                }
+            }
+        }
+    }
+
+    /* landing ends */
+
+    /* footer starts */
+    .footer {
+        h2 {
+            font-size: 35px;
+        }
+    }
+
+    /* footer ends */
+}
+
+
+@media (max-width:875px) {
+
+    /* components starts */
+    #dots {
+        display: block !important;
+    }
+
+    .main-heading {
+        h2 {
+            font-size: 35px !important;
+        }
+    }
+
+    .main-heading {
+        i {
+            font-size: 20px;
+        }
+    }
+
+    /* components ends */
+
+    /* header starts */
+
+    .header {
+        height: 60px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .header {
+        nav {
+            ul {
+                display: none;
+            }
+        }
+    }
+
+    .header {
+        nav {
+            h2 {
+                padding: 10px 0 0 5px;
+            }
+        }
+    }
+
+    /* header ends */
+
+    /* landing starts */
+    .landing {
+        .txt {
+            .text-section {
+                font-size: 20px;
+            }
+        }
+    }
+
+    /* landing ends */
+
+    /* projects starts */
+
+    .projects {
+        .projects-box {
+            .text-section {
+                gap: 15px !important;
+            }
+        }
+    }
+
+
+    .projects {
+        .projects-box {
+            .text-section {
+                h2 {
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+
+
+    /* projects ends */
+    /* contacts starts */
+    .contacts {
+        .form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .contacts {
+        .text-section {
+            margin-bottom: 30px;
+        }
+    }
+
+    /* contacts ends */
+
+}
+
+
+
+@media (max-width:730px) {
+    /* components starts */
+
+    .main-heading {
+        h2 {
+            font-size: 35px !important;
+        }
+    }
+
+    /* components ends */
+
+    /* about me starts*/
+    .me {
+        .box {
+            .img-section {
+                width: 350px;
+                height: 350px;
+            }
+        }
+    }
+
+    .me {
+        .box {
+            .text-section {
+                width: 400px;
+            }
+        }
+    }
+
+    .me {
+        .box {
+            .text-section {
+                p {
+                    font-size: 20px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    /* about me ends */
+
+    /* projects starts */
+
+    .projects {
+        & .projects-box {
+            .project {
+                width: 400px;
+            }
+        }
+    }
+
+    .projects {
+        & .projects-box {
+            & .text-section {
+                h2 {
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+
+    .projects {
+        & .projects-box {
+            & .text-section {
+                p {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .projects {
+        & .projects-box {
+            & .project {
+                & .link {
+                    a {
+                        padding: 10px;
+                        font-size: 18px;
+                        align-content: center;
+
+                    }
+                }
+            }
+        }
+    }
+
+    /* projects ends */
+
+}
+
+@media (max-width:600px) {
+    /* landing starts */
+
+    .landing {
+        .txt {
+            .img-section {
+                img {
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+        }
+    }
+
+    .landing {
+        .txt {
+            h2 {
+                font-size: 40px;
+            }
+        }
+    }
+
+    /* landing ends */
+
+    /* about me starts */
+
+    .me {
+        .box {
+            .img-section {
+                width: 300px;
+                height: 300px;
+            }
+        }
+    }
+
+    .me {
+        .box {
+            .text-section {
+                width: 350px;
+            }
+        }
+    }
+
+    .me {
+        .box {
+            .text-section {
+                p {
+                    font-size: 20px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    /* about me ends */
+
+    /* projects starts */
+
+    .projects {
+        & .projects-box {
+            .project {
+                width: 300px;
+            }
+        }
+    }
+
+    .projects {
+        & .projects-box {
+            & .project {
+                img {
+                    width: 100%;
+                    height: 200px;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+
+    .projects {
+        & .projects-box {
+            & .text-section {
+                h2 {
+                    font-size: 23px;
+                }
+            }
+        }
+    }
+
+    .projects {
+        & .projects-box {
+            & .text-section {
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .projects {
+        & .projects-box {
+            & .project {
+                & .link {
+                    a {
+                        /* padding: 10px; */
+                        font-size: 15px;
+                        align-content: center;
+
+                    }
+                }
+            }
+        }
+    }
+
+    /* projects ends */
+
+    /* footer starts */
+    .footer {
+        h2 {
+            font-size: 30px !important;
+        }
+    }
+
+    /* footer ends */
+}
+
+@media (max-width:550px) {
+
+    /* components ends */
+    .main-heading {
+        h2 {
+            font-size: 25px !important;
+        }
+    }
+
+    .main-heading {
+        i {
+            font-size: 18px;
+        }
+    }
+
+    .landing .backball {
+        display: none;
+    }
+
+    /* components ends */
+
+    /* header starts */
+    .header {
+        background-color: #00A8E8;
+    }
+
+    .header {
+        nav {
+            background-color: #00A8E8;
+        }
+    }
+
+    /* header ends */
+
+    /* about me starts */
+
+    .me {
+        .box {
+            .img-section {
+                width: 250px;
+                height: 250px;
+            }
+        }
+    }
+
+    .me {
+        .box {
+            .text-section {
+                width: 300px;
+            }
+        }
+    }
+
+    .me {
+        .box {
+            .text-section {
+                p {
+                    font-size: 18px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    /* about me ends */
+
+    /* projects starts */
+
+    .projects {
+        & .projects-box {
+            & .project {
+                img {
+                    width: 100%;
+                    height: 150px;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+
+
+    /* projects ends */
+
+    /* footer starts */
+    .footer {
+        h2 {
+            font-size: 25px !important;
+        }
+    }
+
+    /* footer ends */
+}
+
+
+@media (max-width:430px) {
+
+    /* about me starts */
+
+    .me {
+        .box {
+            .img-section {
+                width: 250px;
+                height: 250px;
+            }
+        }
+    }
+
+    .me {
+        .box {
+            .text-section {
+                width: 300px;
+            }
+        }
+    }
+
+    .me {
+        .box {
+            .text-section {
+                p {
+                    font-size: 15px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    /* project starts */
+
+    .projects {
+        & .projects-box {
+            & .text-section {
+                h2 {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+
+    .projects {
+        & .projects-box {
+            & .project {
+                img {
+                    width: 100%;
+                    height: 200px;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+
+    .projects {
+        & .projects-box {
+            & .text-section {
+                h2 {
+                    font-size: 19px;
+                }
+            }
+        }
+    }
+
+    .projects {
+        & .projects-box {
+            & .text-section {
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    /* projects ends */
+
+    /* about me ends */
+
+    /* contacts starts */
+    .contacts {
+        .text-section {
+            padding: 20px !important;
+            width: 320px !important;
+        }
+    }
+
+    .contacts {
+        .input {
+            width: 320px !important;
+        }
+    }
+
+    .contacts {
+        .input {
+            label {
+                font-size: 19px;
+            }
+        }
+    }
+
+    /* contacts ends */
+}
+
+
+
+@media (max-width:390px) {
+
+    /* landing starts */
+    .landing {
+        .txt {
+            .img-section {
+                img {
+                    width: 280px;
+                    height: 280px;
+                }
+            }
+        }
+    }
+
+    .landing {
+        .txt {
+            h2 {
+                font-size: 30px;
+            }
+        }
+    }
+
+    .landing {
+        .txt {
+            .tech {
+                img {
+                    width: 40px !important;
+                    height: 40px !important;
+                }
+            }
+        }
+    }
+
+    /* landing ends */
+    /* about me starts */
+
+    .me {
+        .box {
+            .img-section {
+                width: 230px;
+                height: 230px;
+            }
+        }
+    }
+
+    .me {
+        .box {
+            .text-section {
+                width: 300px;
+            }
+        }
+    }
+
+    .me {
+        .box {
+            .text-section {
+                p {
+                    font-size: 13px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    /* about me ends */
+
+    /* project starts */
+    .projects {
+        & .projects-box {
+            & .project {
+                img {
+                    width: 100%;
+                    height: 120px;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+
+    .projects {
+        .contribution {
+            h2 {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .projects {
+        & .projects-box {
+            & .project {
+                & .link {
+                    a {
+                        /* padding: 5px; */
+                        font-size: 12.5px;
+                        align-content: center;
+                        /* margin: 3px; */
+                    }
+                }
+            }
+        }
+    }
+
+    /* projects ends */
+
+
+    /* footer starts */
+    .footer {
+        h2 {
+            font-size: 18px !important;
+        }
+    }
+
+    /* footer ends */
+
+}
+
+@media (max-width:350px) {
+
+
+    /* footer */
+    .footer {
+        h2 {
+            font-size: 15px !important;
+        }
+    }
+}
+
+@media (max-width:320px) {
+
+    /* landing starts */
+    .landing {
+        .txt {
+            .img-section {
+                img {
+                    width: 250px !important;
+                }
+            }
+        }
+    }
+
+    .landing {
+        .txt {
+            .text-section {
+                h2 {
+                    font-size: 25px !important;
+                }
+            }
+        }
+    }
+
+    .landing {
+        .text-section {
+            img {
+                width: 40px !important;
+                height: 40px !important;
+            }
+        }
+    }
+
+    .landing {
+        .txt {
+            .contact {
+                p {
+                    font-size: 15px !important;
+                }
+            }
+        }
+    }
+
+    .landing {
+        .txt {
+            .tech {
+                p {
+                    font-size: 15px !important;
+                }
+            }
+        }
+    }
+
+    /* landing ends */
+
+}

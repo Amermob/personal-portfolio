@@ -7,16 +7,16 @@ const enableDarkMode = () => {
   dataDark.forEach((el) => el.classList.add("dark"));
   notTest.forEach((el) => el.classList.add("notdark"));
   darkPurple.forEach((el) => el.classList.add("darkpurple"));
-  localStorage.setItem("darkMode", "enabled");
+  sessionStorage.setItem("darkMode", "enabled");
 };
 
 const disableDarkMode = () => {
   dataDark.forEach((el) => el.classList.remove("dark"));
   notTest.forEach((el) => el.classList.remove("notdark"));
   darkPurple.forEach((el) => el.classList.remove("darkpurple"));
-  localStorage.setItem("darkMode", "disabled");
+  sessionStorage.setItem("darkMode", "disabled");
 };
-if (localStorage.getItem("darkMode")) {
+if (sessionStorage.getItem("darkMode")) {
   enableDarkMode();
 } else {
   disableDarkMode();
@@ -24,7 +24,7 @@ if (localStorage.getItem("darkMode")) {
 
 document.querySelector(".btn").addEventListener("click", function () {
   document.querySelector(".ball").classList.toggle("ball-dark");
-  if (localStorage.getItem("darkMode") !== "enabled") {
+  if (sessionStorage.getItem("darkMode") !== "enabled") {
     document.querySelector(".background").style.backgroundColor = "#6e44ff";
     enableDarkMode();
   } else {

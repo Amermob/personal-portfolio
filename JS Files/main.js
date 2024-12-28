@@ -107,7 +107,7 @@ let translations = {
     // about me
     aboutMe: "about me",
     infoAboutMe:
-      "A young man residing in Riyadh is driven by a passion for front-end web page development. While working as a barista, I devote my spare moments to honing my web development skills, with the ambition of fulfilling my career goals in this domain. Apart from my professional pursuits, I find pleasure in gaming.",
+      "A young man residing in Riyadh is driven by a passion for web development. While working as a barista, I devote my spare moments to honing my web development skills.",
     // projects
     sombrero: "Sombrero Coffee Shop",
     sombreroInfo: "sombrero is a Colombian Saudi-owned coffee shop",

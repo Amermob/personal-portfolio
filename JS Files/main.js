@@ -18,6 +18,8 @@ const disableDarkMode = () => {
 };
 if (sessionStorage.getItem("darkMode")) {
   enableDarkMode();
+} else {
+  disableDarkMode();
 }
 
 document.querySelector(".btn").addEventListener("click", function () {
@@ -32,7 +34,7 @@ document.querySelector(".btn").addEventListener("click", function () {
 });
 
 // burger menu starts
-document.querySelector("#dots").onclick = function (e) {
+document.querySelector("#dots").onclick = function () {
   document.querySelector("ul").classList.toggle("burgermenu");
   document
     .querySelector("#dots span:first-child")
@@ -42,7 +44,7 @@ document.querySelector("#dots").onclick = function (e) {
     .classList.toggle("secondspan");
   document.querySelector("#dots span:last-child").classList.toggle("lastspan");
 };
-// localStorage.clear();
+
 // add background color on nav after scroll
 window.onscroll = function () {
   if (this.scrollY >= 200) {
@@ -105,7 +107,7 @@ let translations = {
     // about me
     aboutMe: "about me",
     infoAboutMe:
-      "A young man residing in Riyadh is driven by a passion for front-end web page development. While working as a barista at Sombrero Cafe, I devote my spare moments to honing my web development skills, with the ambition of fulfilling my career goals in this domain. Apart from my professional pursuits, I find pleasure in gaming.",
+      "A young man residing in Riyadh is driven by a passion for web development. While working as a barista, I devote my spare moments to honing my web development skills.",
     // projects
     sombrero: "Sombrero Coffee Shop",
     sombreroInfo: "sombrero is a Colombian Saudi-owned coffee shop",
@@ -141,9 +143,7 @@ let translations = {
     frontEnd: "مطور صفحة الويب",
     // about me
     aboutMe: "معلومات عني:",
-    infoAboutMe:
-      "شاب شغوف بتحقيق حلمه في مجال تطوير صفحات الويب Front-end. أعيش في حي العليا بالرياض وأعمل حاليًا كباريستا في مقهى سومبريرو. أستثمر وقت الفراغ في تطوير مهاراتي كمطور ويب، وأسعى جاهدًا لتحقيق هدفي المهني كمطوِّر ويب. بجانب عملي وتطوير مهاراتي، أستمتع في بعض الأوقات بممارسة ألعاب الفيديو.",
-    // projects
+    infoAboutMe:"شاب شغوف يسعى لتحقيق حلمه في مجال تطوير صفحات الويب Front-end. أعمل حاليًا كباريستا. أستثمر وقت الفراغ في تطوير مهاراتي كمطور ويب، وأسعى جاهدًا لتحقيق هدفي المهني كمطوِّر ويب." ,   // projects
     sombrero: "سومبريرو",
     sombreroInfo: "سومبريرو محل قهوة عربي بطابع كولومبي ",
     webLink: "رابط الموقع",
@@ -171,6 +171,8 @@ let translations = {
 let languageSelector = document.querySelector("#language");
 
 languageSelector.addEventListener("change", (event) => {
+  // location.reload();
+
   setLangauge(event.target.value);
   sessionStorage.setItem("lang", event.target.value);
 });
@@ -187,7 +189,9 @@ const setLangauge = (langauge) => {
   });
   if (langauge === "ar") {
     document.dir = "rtl";
+    `${window.location.href}/ar`;
   } else {
     document.dir = "ltr";
+    `${window.location.href}/en`;
   }
 };

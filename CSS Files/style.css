@@ -558,8 +558,9 @@ p {
 .projects {
     .projects-box {
             h2 {
-            font-size:23px;
-            padding:10px;
+            font-size: 27px;
+            padding: 10px;
+            text-align: center;
         }
     }
 }

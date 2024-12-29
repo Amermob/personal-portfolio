@@ -514,7 +514,7 @@ p {
         .text-section {
             p {
                 font-size: 27px;
-                text-align: left;
+                text-align: center;
                 color: white;
                 text-wrap: balance;
             }

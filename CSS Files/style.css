@@ -560,6 +560,18 @@ p {
 .projects {
     .projects-box {
         .project {
+            h2 {
+            font-size:23px;
+            padding:10px;
+            }
+        }
+    }
+}
+
+
+.projects {
+    .projects-box {
+        .project {
             img {
                 width: 100%;
                 height: 300px;

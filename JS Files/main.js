@@ -113,7 +113,7 @@ let translations = {
     sombreroInfo: "sombrero is a Colombian Saudi-owned coffee shop",
     webLink: "Live Demo",
     source: "Source Code",
-    sabahat: "Sabahat al eid",
+    sabahat: "Sabahat al eid for construction",
     sabahatInfo: "a construction based website made for a business focus",
     psStore: "Arab PS Store",
     psStoreInfo: "An e-commerce website to buy PlayStation consoles and games",

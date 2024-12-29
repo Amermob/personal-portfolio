@@ -546,10 +546,8 @@ p {
     .projects-box {
         .project {
             width: 400px;
-            /* border: 2px solid white; */
             background-color: var(--secondary-background-color);
             border-radius: 10px;
-            /* padding: 20px; */
             animation: fade linear both;
             animation-timeline: view();
             animation-range: entry 40% cover 40%;
@@ -559,11 +557,9 @@ p {
 
 .projects {
     .projects-box {
-        .project {
             h2 {
             font-size:23px;
             padding:10px;
-            }
         }
     }
 }

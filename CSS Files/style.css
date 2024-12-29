@@ -545,7 +545,7 @@ p {
 .projects {
     .projects-box {
         .project {
-            width: 550px;
+            width: 400px;
             /* border: 2px solid white; */
             background-color: var(--secondary-background-color);
             border-radius: 10px;

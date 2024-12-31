@@ -301,7 +301,6 @@
     /* header starts */
 
     .header {
-        height: 60px;
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -356,17 +355,6 @@
         }
     }
 
-    .projects {
-        .projects-box {
-            .text-section {
-                .link {
-                    a {
-                        margin: 0 10px;
-                    }
-                }
-            }
-        }
-    }
 
     /* projects ends */
     /* contacts starts */
@@ -469,6 +457,8 @@
                     a {
                         padding: 10px;
                         font-size: 18px;
+                        align-content: center;
+
                     }
                 }
             }
@@ -582,8 +572,10 @@
             & .project {
                 & .link {
                     a {
-                        padding: 10px;
+                        /* padding: 10px; */
                         font-size: 15px;
+                        align-content: center;
+
                     }
                 }
             }
@@ -730,30 +722,11 @@
 
     /* project starts */
 
-
-    .projects {
-        & .projects-box {
-            .project {
-                padding: 10px;
-            }
-        }
-    }
-
     .projects {
         & .projects-box {
             & .text-section {
                 h2 {
                     font-size: 20px;
-                }
-            }
-        }
-    }
-
-    .projects {
-        & .projects-box {
-            & .text-section {
-                p {
-                    font-size: 15px;
                 }
             }
         }
@@ -787,19 +760,6 @@
             & .text-section {
                 p {
                     font-size: 15px;
-                }
-            }
-        }
-    }
-
-    .projects {
-        & .projects-box {
-            & .project {
-                & .link {
-                    a {
-                        padding: 5px;
-                        font-size: 15px;
-                    }
                 }
             }
         }
@@ -928,9 +888,10 @@
             & .project {
                 & .link {
                     a {
-                        padding: 5px;
+                        /* padding: 5px; */
                         font-size: 12.5px;
-                        margin: 3px;
+                        align-content: center;
+                        /* margin: 3px; */
                     }
                 }
             }

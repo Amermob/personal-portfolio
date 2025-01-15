@@ -113,7 +113,7 @@ let translations = {
     sombreroInfo: "sombrero is a Colombian Saudi-owned coffee shop",
     webLink: "Live Demo",
     source: "Source Code",
-    sabahat: "Sabahat al eid for construction",
+    sabahat: "Sabahat al eid",
     sabahatInfo: "a construction based website made for a business focus",
     psStore: "Arab PS Store",
     psStoreInfo: "An e-commerce website to buy PlayStation consoles and games",
@@ -123,7 +123,7 @@ let translations = {
     // Contacts
     contacts: "contacts",
     hitMeUp: "hit me up:",
-    location: "Location: Riyadh, al Olaya",
+    location: "Location: Riyadh, al Jiradiyah",
     cv: "View Resume",
     yourName: "Your Name:",
     phone: "Phone Number:",
@@ -143,7 +143,8 @@ let translations = {
     frontEnd: "مطور صفحة الويب",
     // about me
     aboutMe: "معلومات عني:",
-    infoAboutMe:"شاب شغوف يسعى لتحقيق حلمه في مجال تطوير صفحات الويب Front-end. أعمل حاليًا كباريستا. أستثمر وقت الفراغ في تطوير مهاراتي كمطور ويب، وأسعى جاهدًا لتحقيق هدفي المهني كمطوِّر ويب." ,   // projects
+    infoAboutMe:
+      "شاب شغوف يسعى لتحقيق حلمه في مجال تطوير صفحات الويب Front-end. أعمل حاليًا كباريستا. أستثمر وقت الفراغ في تطوير مهاراتي كمطور ويب، وأسعى جاهدًا لتحقيق هدفي المهني كمطوِّر ويب.", // projects
     sombrero: "سومبريرو",
     sombreroInfo: "سومبريرو محل قهوة عربي بطابع كولومبي ",
     webLink: "رابط الموقع",
@@ -157,7 +158,7 @@ let translations = {
     inProgress: "جاري العمل",
     // Contacts
     hitMeUp: "حياك الله على:",
-    location: "الموقع: الرياض حي العليا",
+    location: "الموقع: الرياض حي الجرادية",
     cv: "السيرة الذاتية",
     yourName: "الاسم:",
     phone: "رقم الجوال:",

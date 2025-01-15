@@ -227,7 +227,7 @@ h2 {
     animation-range: entry 0 cover 40%;
 }
 
-@keyframes fade {
+@keyframes left {
     from {
         opacity: 0.4;
         transform: translateX(-200px);
@@ -235,6 +235,26 @@ h2 {
         -moz-transform: translateX(-200px);
         -ms-transform: translateX(-200px);
         -o-transform: translateX(-200px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+    }
+}
+
+@keyframes right {
+    from {
+        opacity: 0.4;
+        transform: translateX(200px);
+        -webkit-transform: translateX(200px);
+        -moz-transform: translateX(200px);
+        -ms-transform: translateX(200px);
+        -o-transform: translateX(200px);
     }
 
     to {
@@ -474,9 +494,9 @@ h2 {
 .me {
     margin-top: 100px;
     margin-bottom: 100px;
-    animation: fade linear both;
+    animation: left linear both;
     animation-timeline: view();
-    animation-range: entry 0 cover 40%
+    animation-range: entry 0 cover 40%;
 }
 
 .me {
@@ -508,9 +528,10 @@ h2 {
                 height: 100%;
                 border-radius: 42px;
                 object-fit: cover;
-                animation: fade linear both;
+                animation: fadeFromTheLeft linear both;
                 animation-timeline: view();
-                animation-range: entry 0 cover 40%
+                animation-range: entry 0 cover 40%;
+                -webkit-animation: fadeFromTheRight linear both;
             }
         }
     }
@@ -543,9 +564,9 @@ h2 {
 /* projects starts */
 
 .projects {
-    animation: fade linear both;
+    animation: right linear both;
+    animation-range: entry 0 cover 40%;
     animation-timeline: view();
-    animation-range: entry 0 cover 40%
 }
 
 .projects {
@@ -684,9 +705,9 @@ h2 {
     margin-top: 50px;
     margin-bottom: 50px;
     position: relative;
-    animation: fade linear both;
+    animation: left linear both;
     animation-timeline: view();
-    animation-range: entry 20% cover 20%
+    animation-range: entry 20% cover 20%;
 }
 
 .contacts {

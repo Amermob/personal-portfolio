@@ -584,9 +584,9 @@ h2 {
             width: 400px;
             background-color: var(--secondary-background-color);
             border-radius: 10px;
-            animation: fade linear both;
+            animation: left linear both;
             animation-timeline: view();
-            animation-range: entry 0 cover 40%
+            animation-range: entry 0 cover 40%;
         }
     }
 }

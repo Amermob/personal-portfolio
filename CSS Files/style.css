@@ -247,7 +247,7 @@ h2 {
     }
 }
 
-@keyframes right {
+/* @keyframes right {
     from {
         opacity: 0.4;
         transform: translateX(200px);
@@ -265,7 +265,7 @@ h2 {
         -ms-transform: translateX(0);
         -o-transform: translateX(0);
     }
-}
+} */
 
 .header {
     nav {
@@ -531,7 +531,7 @@ h2 {
                 animation: fadeFromTheLeft linear both;
                 animation-timeline: view();
                 animation-range: entry 0 cover 40%;
-                -webkit-animation: fadeFromTheRight linear both;
+                -webkit-animation: left linear both;
             }
         }
     }
@@ -564,7 +564,7 @@ h2 {
 /* projects starts */
 
 .projects {
-    animation: right linear both;
+    animation: left linear both;
     animation-range: entry 0 cover 40%;
     animation-timeline: view();
 }

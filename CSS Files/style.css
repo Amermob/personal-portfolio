@@ -294,6 +294,7 @@ h2 {
     animation: fade linear both;
     animation-timeline: view();
     animation-range: entry 0 cover 40%;
+    -webkit-animation: fade linear both;
 }
 
 @keyframes left {
@@ -429,11 +430,11 @@ h2 {
                 height: 100%;
                 border-radius: 42px;
                 object-fit: cover;
-                animation: fadeFromTheLeft linear both;
+                animation: Left linear both;
                 animation-timeline: view();
                 animation-range: entry 0 cover 40%;
-                -webkit-animation: left linear both;
-            }
+                -webkit-animation: Left linear both;
+}
         }
 
         .text-section {

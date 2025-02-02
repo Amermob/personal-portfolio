@@ -572,8 +572,7 @@
             & .project {
                 & .link {
                     a {
-                        /* padding: 10px; */
-                        font-size: 15px;
+                        font-size: 14px;
                         align-content: center;
 
                     }
@@ -976,5 +975,4 @@
     }
 
     /* landing ends */
-
 }

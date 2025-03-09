@@ -530,6 +530,30 @@ h2 {
 /* projects ends */
 
 
+/* start challenges */
+
+
+.challenges {
+    .box {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    span {
+        margin: 30px 0;
+        font-size: clamp(18px, 4vw, 28px);
+    }
+
+    iframe {
+        height: 500px;
+        width: 600px;
+    }
+}
+
+/* end challenges */
+
+
 /* contacts starts */
 
 
